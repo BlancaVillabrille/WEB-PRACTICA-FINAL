@@ -24,79 +24,89 @@ header {
     background-color: var(--color-rosa-hover);
 }
 
-header > p {
-    max-width: 600px;
-    margin: auto;
-}
-
-#menu {
+nav {
     height: 4em;
+    width: 90%;
     margin: 2em;
     background-color: var(--color-blanco-fondo);
     border: 2px solid #1C1A31;
     border-radius: 50px;
+    position: absolute;
+    z-index: 10000;
 
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
-#logo {
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div#logo {
     width: 30%;
     align-content: flex-start;
     margin-left: 1em;
 }
 
-#logo > img {
+div#logo > a > img {
     height: 3em;
 }
 
-#menu > ul {
+.menu > ul {
     width: 70%;
     height: 3em;
     padding: 0;
     display: flex;
-    justify-content: space-around;
-    align-content: flex-end;
+    justify-content: flex-end;
     align-items: center;
     margin-bottom: 0em;
 }
 
-#menu > ul > li {
+.menu > ul > li {
+    padding: 0 1em;
     list-style: none;
 }
 
-#menu > ul > li > button {
-    height: 2em;
+.menu > ul > li > button {
+    height: 3em;
     padding: 0 1em;
     background-color: #F61067;
     border: 2px solid #F61067;
     border-radius: 50px;
 }
 
-#menu > ul > li > button > a {
+.menu > ul > li > button > a {
     color: var(--color-blanco-fondo);
     text-decoration: none;
 }
 
-#menu > ul > li > button:hover {
+.menu > ul > li > button:hover {
     background-color: var(--color-blanco-fondo);
 
 }
 
-#menu > ul > li > button:hover > a {
+.menu > ul > li > button:hover > a {
     color: var(--color-rosa-hover);
     font-weight: bold;
 }
 
-#menu > ul > li > a,
-#menu > ul > li > i {
-    color: var(--color-negro-texto);
-    text-decoration: none;
+.menu > ul > li > a:hover {
+    color: var(--color-rosa-hover);
+    font-weight: bold;
 }
 
-#menu > ul > li:last-child {
+#menubtn {
     display: none;
+}
+
+.menu > ul > li > a,
+#menubtn {
+    color: var(--color-negro-texto);
+    text-decoration: none;
 }
 
 
@@ -104,27 +114,30 @@ header > p {
 
 @media screen and (max-width: 700px) {
 
-    #menu > ul > li:last-child {
+    li > #menubtn {
+        float: right;
         display: block;
     }
 
-    #menu > ul > li:not(:last-child) {
+    ul#links_menu > li:not(:last-child) {
         display: none;
-    }
-
-    #menu > ul {
         height: auto;
         padding: 1em;
         flex-direction: column;
         align-items: flex-end;
     }
 
-    #menu > ul > li {
-        margin: 0.2em 0;
+
+    ul#links_menu.responsive {position: relative;}
+    ul#links_menu.responsive i#menubtn {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
-    #menu > ul > li:hover {
+    ul#links_menu.responsive a {
+        float: none;
         display: block;
-        transition-delay: ease-in-out 0.5s;
-    }
+        text-align: left;
+     }
 }
