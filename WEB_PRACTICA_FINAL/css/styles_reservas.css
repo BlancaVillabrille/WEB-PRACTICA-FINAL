@@ -13,3 +13,11 @@
     --color-blanco-fondo: #F4F4ED;
     --color-verde-links: #00F0B5;
 }
+
+body{
+    background-color: #F4F4ED;
+}
+
+.aboutus h1{
+    font-weight: 800;
+}
