@@ -13,3 +13,47 @@
     --color-blanco-fondo: #F4F4ED;
     --color-verde-links: #00F0B5;
 }
+
+/* PRIMERA SECCION */
+.build-a-xmas{
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+}
+.build-a-xmas-2{
+    display: flex;
+    flex-direction: row;
+}
+.first-imgs-merch{
+    display: flex;
+    flex-direction: row;
+    object-fit: contain;
+    width: 55%;
+    height: 70vh;
+}
+.square-stars{
+    width: 36%;
+    background-color: var(--color-rosa-hover);
+    border-radius: 50px;
+    overflow: hidden;
+}
+.star{
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    height: 29vh;
+    overflow: hidden;
+    left: 20px;
+}
+.stars-2{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    height: 40vh;
+    right: 0;
+    border-radius: 50px;
+}
+.text-btn-eme-de-amores{
+    display: flex;
+    flex-direction: column;
+}
