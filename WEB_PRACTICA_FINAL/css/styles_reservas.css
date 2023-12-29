@@ -4,6 +4,7 @@
     padding: 0;
     font-family: 'Sora', sans-serif;
     scroll-behavior: smooth;
+    color: #1C1A31;
 }
 
 :root {
@@ -58,7 +59,42 @@ body{
     width: 50%;
 }
 
-.edificio img{
-width: 100%;
+.imagen_fondo{
+background-image: url(../media/img/fachada.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+height: 30em;
 }
+
+
+.titulo_banner{
+    color: #F4F4ED;
+    text-align: center;
+    margin: 0;
+}
+
+.botonparallax{
+text-align: center;
+padding-top: 12.5em;
+}
+
+.botonparallax button{
+    width: 20em;
+    height: 3em;
+    border-radius: 2em;
+}
+
+.btn-outline-secondary{
+    background-color: #F61067;
+    color: #F4F4ED;
+    border-style: none;
+}
+
+.btn-outline-secondary:hover{
+    background-color: #F4F4ED;
+    color: #F61067;
+}
+
+
 
