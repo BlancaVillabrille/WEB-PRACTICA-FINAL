@@ -38,6 +38,7 @@ nav {
     border-radius: 50px;
 
     display: block;
+    z-index: 999;
 }
 
 #menu {
@@ -150,9 +151,9 @@ nav {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 #portada_home {
-    max-width: 1200px;
     margin: 1em 2em 0 2em;
     padding: 2em 1em;
+    min-height: calc(100vh - 10em);
 
     display: flex;
     align-items: center;
@@ -180,7 +181,6 @@ nav {
 
 #portada_home img.starL {
     height: 15em;
-    padding-left: 5em;
 }
 
 #portada_home img.starM {
@@ -193,7 +193,7 @@ nav {
 
 #portada_home > div.row > div.col-5 > img.logo_header {
     height: auto;
-    width: 70%;
+    width: 65%;
 }
 
 #portada_home > div.row > div.col-5 > img.gato_header {
@@ -202,6 +202,10 @@ nav {
     z-index: 3;
     bottom: 14%;
     left: 30%;
+}
+
+.twostars {
+    display: flex;
 }
 
 div.marquee {
@@ -239,6 +243,50 @@ li.marquee_item > h2 {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 1000px) {
+    #portada_home img.starL {
+        height: 13em;
+    }
+    
+    #portada_home img.starM {
+        height: 8em;
+    }
+    
+    #portada_home img.starS {
+        height: 5em;
+    }
+
+    #portada_home > div.row > div.col-5 > img.logo_header {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #portada_home img.starL {
+        height: 10em;
+    }
+    
+    #portada_home img.starM {
+        height: 6em;
+    }
+    
+    #portada_home img.starS {
+        height: 3em;
+    }
+
+    #portada_home > div.row > div.col-5 > img.logo_header {
+        width: 80%;
+    }
+
+    #portada_home > div.row {
+        padding-top: 5%;
+    }
+
+    #portada_home > div.row > div.col-5 > img.gato_header {
+        left: 20%;
+    }
+}
+
 @media screen and (max-width: 700px) {
 
     #menu > ul > li:last-child {
@@ -261,4 +309,131 @@ li.marquee_item > h2 {
         margin: 0.2em 0;
     }
 
+    #portada_home > div.row > div.col-5 > img.logo_header {
+        width: 85%;
+        padding-left: 10%;
+    }
+
+    #portada_home img.starS,
+    #portada_home img.starM,
+    #portada_home img.starL {
+        padding: 0.5em 0.5em 0.5em 0;
+    }
+
+    #portada_home > div.row > div.col:first-child {
+        display: none;
+    }
+
+    #portada_home > div.row > div.col-5 > img.gato_header {
+        left: 10%;
+        height: 25%;
+    }
+
+    .col-5 {
+        width: 60%;
+    }
+
+    #portada_home img.starL {
+        height: 12em;
+    }
+    
+    #portada_home img.starM {
+        height: 8em;
+    }
+    
+    #portada_home img.starS {
+        height: 6em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .col-5 {
+        width: 50%;
+    }
+
+    #portada_home > div.row > div.col-5 > img.logo_header {
+        width: 100%;
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #portada_home > div.row {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    #portada_home img.starL {
+        height: 10em;
+    }
+    
+    #portada_home img.starM {
+        height: 6em;
+    }
+    
+    #portada_home img.starS {
+        height: 3em;
+    }
+
+    li.marquee_item > h2 {
+        font-size: 2em;
+    }
+
+    div.marquee {
+        width: 100%;
+    }
+
+    .col-5 {
+        width: 60%;
+    }
+
+    #portada_home > div.row > div.col-5 > img.gato_header {
+        bottom: 9%;
+        height: 30%;
+    }
+
+    #portada_home > div.row > div.col-5 > img.logo_header {
+        width: 100%;
+        padding: 0;
+    }
+
+    #portada_home > div.row > div.col:last-child {
+        position: absolute;
+        bottom: 12%;
+        padding-left: 55%;
+    }
+
+    #portada_home img.starS,
+    #portada_home img.starM,
+    #portada_home img.starL {
+        padding: 0;
+    }
+
+    #portada_home img.starL {
+        height: 8em;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+
+    .col-5 {
+        width: 80%;
+    }
+
+    #portada_home > div.row > div.col-5 > img.gato_header {
+        height: 25%;
+        left: 15%;
+    }
+
+    #portada_home img.starL {
+        height: 6em;
+    }
+
+    #portada_home img.starM {
+        height: 4em;
+    }
+    
+    
 }
