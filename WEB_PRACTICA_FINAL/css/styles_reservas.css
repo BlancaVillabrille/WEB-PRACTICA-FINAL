@@ -111,7 +111,30 @@ padding-top: 12.5em;
 .btn-outline-secondary:hover img {
     /* Filtro para cambiar el color a rojo cuando haces hover */
     filter: brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(7475%) hue-rotate(0deg) brightness(95%) contrast(105%);
-  }
+}
+
+
+  /* carruselgaleria */
+
+.sectionreview {
+    padding: 70px 0;
+	height: 100vh;
+}
+
+.carrusel{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.sectionreview h2{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
 
 
 
