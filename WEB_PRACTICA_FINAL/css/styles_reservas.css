@@ -64,7 +64,9 @@ background-image: url(../media/img/fachada.jpg);
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
-height: 30em;
+height: 35em;
+margin-bottom: 6em;
+
 }
 
 
@@ -76,7 +78,7 @@ height: 30em;
 
 .botonparallax{
 text-align: center;
-padding-top: 12.5em;
+padding-top: 14.5em;
 }
 
 .botonparallax button{
@@ -116,25 +118,139 @@ padding-top: 12.5em;
 
   /* carruselgaleria */
 
+.reviews{
+    margin: 3em;
+}
+
 .sectionreview {
     padding: 70px 0;
 	height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    height: 25em;
+    margin: 3em;
+    overflow-x: hidden;
+    white-space: nowrap;
 }
 
+.owl-carousel .owl-stage{
+    display: flex;
+}
+.owl-carousel .owl-item {
+    width: 100%;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    margin-right: 20px;
+  }
+  
+  .box {
+    text-align: center;
+  }
+
+.reviewtext h1{
+    font-weight: 800;
+    font-size: 5em;
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+}
 .carrusel{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+    padding: 0;
 }
 
-.sectionreview h2{
+section .title {
     position: relative;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
+  
 }
 
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 250px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
 
+.sectionreview .carrusel .card {
+    background: #222;
+	border-radius: 50px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+	cursor: pointer;
+    transition: all 0.3s ease;
+    width: 30%;
+}
 
+.sectionreview .carrusel  .card:hover {
+    background: #00BCD4;
+}
+
+.sectionreview .carrusel  .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.sectionreview .carrusel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.sectionreview .carrusel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.sectionreview .carrusel img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00BCD4;
+    transition: all 0.3s ease;
+}
+
+.sectionreview .carrusel .card:hover img {
+    border-color: #fff;
+}
+
+.sectionreview {
+    display: flex; /* Hace que los elementos dentro de la sección se alineen en una fila */
+    overflow-x: scroll; /* Permite el desplazamiento horizontal si las tarjetas no caben en la pantalla */
+  }
+  
+  .carrusel {
+    display: flex; /* Alinea las tarjetas en una fila dentro del carrusel */
+  }
+  
+  .card {
+    flex: 0 0 auto; /* Hace que las tarjetas no se expandan y mantengan su tamaño original */
+    margin-right: 20px; /* Espaciado entre tarjetas */
+  }
+  
+  .box {
+    text-align: center; /* Centra el contenido dentro de cada tarjeta */
+  }
