@@ -22,18 +22,17 @@ body{
 .sectionaboutus{
     display: flex;
     flex-direction: row;
-    margin: 3em;
 }
 
 .aboutustext{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    margin: 4em;
 }
 
 .aboutustext h1{
     font-weight: 800;
-    font-size:5em;
+    font-size:5rem;
     margin-block-end: 0em;
     margin-block-start: 0em;
     display: inline-block;
@@ -66,9 +65,11 @@ background-attachment: fixed;
 background-size: cover;
 height: 35em;
 margin-bottom: 6em;
-
 }
 
+.reviews h2{
+  margin-bottom: 1.2em;
+}
 
 .titulo_banner{
     color: #F4F4ED;
@@ -80,6 +81,7 @@ margin-bottom: 6em;
 text-align: center;
 padding-top: 14.5em;
 }
+
 
 .botonparallax button{
     width: 15em;
@@ -98,16 +100,14 @@ padding-top: 14.5em;
     color: #F61067;
     border-style: solid;
     border-color: #F61067;
-    border-width: 2px;
-
-   
+    border-width: 2px; 
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.7); /* Efecto de brillo al hacer hover */
 }
 
 .botonparallax img{
     width: 20px;
     margin-left:0.7em;
     color: #F4F4ED;
-    
 }
 
 .btn-outline-secondary:hover img {
@@ -116,141 +116,135 @@ padding-top: 14.5em;
 }
 
 
-  /* carruselgaleria */
+/* carrusel */
 
-.reviews{
-    margin: 3em;
+.wrapper {
+  width: 100%;
 }
 
-.sectionreview {
-    padding: 70px 0;
-	height: 100vh;
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    height: 25em;
-    margin: 3em;
-    overflow-x: hidden;
-    white-space: nowrap;
+.wrapper .carousel {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 60px;
 }
 
-.owl-carousel .owl-stage{
-    display: flex;
-}
-.owl-carousel .owl-item {
-    width: 100%;
-  }
-
-  .card {
-    flex: 0 0 auto;
-    margin-right: 20px;
-  }
-  
-  .box {
-    text-align: center;
-  }
-
-.reviewtext h1{
-    font-weight: 800;
-    font-size: 5em;
-    margin-block-end: 0em;
-    margin-block-start: 0em;
-    margin: 0;
-    margin-bottom: 1em;
+.carousel .card {
+  border-radius: 25px;
+  align-items: center;
+  background-color: #00F0B5;
+  padding: 2em;
 }
 
-.box{
-    display: flex;
-    flex-direction: column;
-}
-.carrusel{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-    padding: 0;
+.aboutustext p {
+  margin-bottom: 0.6em;
+  margin-right: 0em;
+  margin-top: 0.6em;
 }
 
-section .title {
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-  
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  margin: 0;
 }
 
-section .title::before {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 250px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
+
+
+.estrellas .owl-item image{
+  margin: 1em;
 }
 
-.sectionreview .carrusel .card {
-    background: #222;
-	border-radius: 50px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-	cursor: pointer;
-    transition: all 0.3s ease;
-    width: 30%;
+.card img {
+  max-width: 7em; /* Ajusta el valor según tus necesidades */
+  height: auto; /* Mantiene la proporción de la imagen */
 }
 
-.sectionreview .carrusel  .card:hover {
-    background: #00BCD4;
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.sectionreview .carrusel  .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
+.owl-dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  margin: 0 5px;
+  border: 2px solid #F61067 !important;
+  transition: all 0.3s ease;
 }
 
-.sectionreview .carrusel .card:hover .box {
-    transform: scale(1.05);
+.owl-dot:hover,
+.owl-dot.active {
+  background-color:#F61067 !important;
 }
 
-.sectionreview .carrusel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -50%);
 }
 
-.sectionreview .carrusel img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #00BCD4;
-    transition: all 0.3s ease;
+.owl-prev {
+  left: 38px;
 }
 
-.sectionreview .carrusel .card:hover img {
-    border-color: #fff;
+.owl-next {
+  right: 8px;
 }
 
-.sectionreview {
-    display: flex; /* Hace que los elementos dentro de la sección se alineen en una fila */
-    overflow-x: scroll; /* Permite el desplazamiento horizontal si las tarjetas no caben en la pantalla */
-  }
-  
-  .carrusel {
-    display: flex; /* Alinea las tarjetas en una fila dentro del carrusel */
-  }
-  
-  .card {
-    flex: 0 0 auto; /* Hace que las tarjetas no se expandan y mantengan su tamaño original */
-    margin-right: 20px; /* Espaciado entre tarjetas */
-  }
-  
-  .box {
-    text-align: center; /* Centra el contenido dentro de cada tarjeta */
-  }
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 50px;
+  color: #bfbfbf;
+  transition: all 0.2s;
+}
+
+.fa-chevron-left:hover,
+.fa-chevron-right:hover {
+  color: #F61067;
+  transform: scale(1.1);
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.overlay p {
+  margin: 10px 0;
+}

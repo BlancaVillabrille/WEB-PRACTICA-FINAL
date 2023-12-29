@@ -54,7 +54,7 @@
     <section>
         <div class="imagen_fondo">
             <div class="botonparallax">
-                 <button type="button" class="btn btn-outline-secondary btn-lg">¡Mira nuestro blog!<img src="media/iconos/flecha_blanca.svg" alt=""></button>
+                 <button type="button" class="btn btn-outline-secondary btn-lg">¡Cotillea nuestro blog!<img src="media/iconos/flecha_blanca.svg" alt=""></button>
             </div>
         </div>
     </section>
@@ -65,70 +65,88 @@
             <div>
                 <h1>REVIEWS<img src="media/iconos/flecha.svg" alt=""></h1>
                 <h2>Reseñas de nuestros clientes</h2>
-            </div>
-    </section>    
+            </div>    
 
-    <section class="sectionreview">
-    <div class="carrusel">
-        <!-- 1º carrusel -->
-        <div class="card">
-            <!-- box code -->
-            <div class="box">
-                <!-- img code -->
-                <img src="media/img/vegeta.png" alt="">
-                <!-- text code -->
-                <div class="text">Vegeta</div>
-                <!-- description code -->
-                <p>Vegeta is the prince of the fallen Saiyan race.</p>
-            </div>
+
+</head>
+<body>
+ 
+    <div class="wrapper">
+        <div class="carousel owl-carousel">
+
+          <div class="card" id="c1">
+            <image src="media/img/Usuario1.png"alt></image>
+            <p><b>Manu Alfaro</b></p>
+            <image src="media/iconos/Icons.png"alt></image>
+            <p>¡Me ha encantado!</p>
+          </div>
+
+          <div class="card" id="1">
+            <image src="media/img/Usuario2.png"alt></image>
+            <p><b>Ana Castillo</b></p>
+            <image src="media/iconos/Icons.png"alt></image>
+            <p>Mazo divertido</p>
+          </div>
+
+          <div class="card" id="2">
+            <image src="media/img/Usuario3.png"alt></image>
+            <p><b>Pedro Osacar</b></p>
+            <image src="media/iconos/Icons.png"alt></image>
+            <p>Plan con amigos</p>
+          </div>
+
+          <div class="card" id="3">
+            <image src="media/img/Usuario1.png"alt></image>
+            <p><b>Xabi Alonso</b></p>
+            <image src="media/iconos/Icons.png"alt></image>
+            <p>Volvería 100%</p>
+          </div>
+
+          <div class="card" id="4">
+            <image src="media/img/Usuario2.png"alt></image>
+            <p><b>Alba Torrico</b></p>
+            <image src="media/iconos/Icons.png"alt></image>
+            <p>¡Me ha encantado!</p>
+          </div>
+
+          <div class="card" id="5">
+            <image src="media/img/Usuario3.png"alt></image>
+            <p><b>Sara Cervantes</b></p>
+            <image src="media/iconos/Icons.png"alt></image>
+          <p>Volveré sin duda</p>
         </div>
-        <!-- 2º carrusel -->
-        <div class="card">
-            <div class="box">
-                <img src="media/img/goku.png" alt="">
-                <div class="text">Goku</div>
-                <p>Goku is a fictional character and the main protagonist of the Dragon Ball.</p>
-            </div>
         </div>
-        
-        <!-- 3rd card code -->
-        <div class="card">
-            <div class="box">
-                <img src="media/img/trunks.png" alt="">
-                <div class="text">Trunks</div>
-                <p>Trunks is the Earthling and Saiyan hybrid son of Bulma and Vegeta.</p>
-            </div>
-        </div>
-        
-        <!-- 4th card code -->
-        <div class="card">
-            <div class="box">
-                <img src="media/img/gohan.png" alt="">
-                <div class="text">Gohan</div>
-                <p>Gohan is the elder son of the series' primary protagonist Goku.</p>
-            </div>
-        </div>
-    </div>
+      </div>
+    
+
+</section>
+
+  <script>
+    $(".carousel").owlCarousel({
+      loop: true,
+      margin: 25,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      nav: true,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 2,
+        },
+        1000: {
+          items: 3,
+        },
+      }
+    })
+  </script>
+   <script src="js/script_reservas.js"></script>
     </section>
      
-   
-
-
   
-      
-     
-   
-
-
-
-
-
-
-
-
-
-
-    
 </main>
     <footer>
 

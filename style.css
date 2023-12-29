@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+section {
+    padding: 70px 0;
+	height: 100vh;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.dbz {
+    font-family: 'Poppins', sans-serif;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 250px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: #00BCD4;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* services section styling */
+.services, .dbz {
+    color:#fff;
+    background: #111;
+}
+
+.services .title::before,
+.dbz .title::before{
+    background: #fff;
+}
+
+.services .title::after,
+.dbz .title::after {
+    background: #111;
+    content: "what i provide";
+}
+
+/* dbz section styling */
+.dbz .title::after {
+    content: "HTML CSS & jQuery";
+}
+
+.dbz .carousel .card {
+    background: #222;
+	border-radius: 50px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+	cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dbz .carousel .card:hover {
+    background: #00BCD4;
+}
+
+.dbz .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.dbz .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.dbz .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.dbz .carousel .card img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00BCD4;
+    transition: all 0.3s ease;
+}
+
+.dbz .carousel .card:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #00BCD4!important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #00BCD4!important;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px){
+    .max-width {
+        max-width: 930px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+}
