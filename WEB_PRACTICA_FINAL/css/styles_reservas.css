@@ -18,6 +18,47 @@ body{
     background-color: #F4F4ED;
 }
 
-.aboutus h1{
-    font-weight: 800;
+.sectionaboutus{
+    display: flex;
+    flex-direction: row;
+    margin: 3em;
 }
+
+.aboutustext{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.aboutustext h1{
+    font-weight: 800;
+    font-size:5em;
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.aboutustext img{
+    width: 70px;
+    margin-left: 0.3em;
+    vertical-align: baseline;
+}
+
+.aboutustext p{
+    margin-right: 5em;
+    font-size: 1.2em;
+}
+
+.churrourban{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.edificio img{
+width: 100%;
+}
+
