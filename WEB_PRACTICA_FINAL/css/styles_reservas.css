@@ -80,7 +80,7 @@ padding-top: 12.5em;
 }
 
 .botonparallax button{
-    width: 20em;
+    width: 15em;
     height: 3em;
     border-radius: 2em;
 }
@@ -94,7 +94,24 @@ padding-top: 12.5em;
 .btn-outline-secondary:hover{
     background-color: #F4F4ED;
     color: #F61067;
+    border-style: solid;
+    border-color: #F61067;
+    border-width: 2px;
+
+   
 }
+
+.botonparallax img{
+    width: 20px;
+    margin-left:0.7em;
+    color: #F4F4ED;
+    
+}
+
+.btn-outline-secondary:hover img {
+    /* Filtro para cambiar el color a rojo cuando haces hover */
+    filter: brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(7475%) hue-rotate(0deg) brightness(95%) contrast(105%);
+  }
 
 
 
