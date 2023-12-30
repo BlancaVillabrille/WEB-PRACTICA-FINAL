@@ -406,7 +406,7 @@ color: #F4F4ED;
 }
 
 .newsletter_wrapper p {
-  color: #000000;
+  color:#F4F4ED;
   font-size: 1.3em;
   line-height: 1.2em;
 }
@@ -474,6 +474,7 @@ color: #F4F4ED;
 
 .redes i {
   margin: 0 2.5vw; /* Añade margen entre los iconos si lo deseas */
+color:#F4F4ED;
 }
 
 .fa-solid{
