@@ -4,7 +4,6 @@
     padding: 0;
     font-family: 'Sora', sans-serif;
     scroll-behavior: smooth;
-    color: #1C1A31;
 }
 
 :root {
@@ -302,7 +301,7 @@ padding-top: 14.5em;
   flex-direction: column-reverse;
   flex-wrap: nowrap;
   padding: 4em 4em 4em 0em;
-  background-color: #F61067;
+  background-color:#5E239D;
 }
 
 .infoubication p, a{
@@ -342,7 +341,7 @@ color: #F4F4ED;
 
 .google-maps {
   display: flex;
-  background-color:#F61067;
+  background-color:#5E239D;
   flex-direction: column;
   justify-content: center;
   border-bottom: #000000;
@@ -371,30 +370,28 @@ color: #F4F4ED;
 
 
 /* seccion newsletter */
-button:focus,
-input:focus,
-textarea:focus {
-  outline: 0;
+
+.footer{
+  display: flex;
+  flex-direction: row;
 }
 
 .newsletter_wrapper {
-  height: 50vw;
+  height: 40vw;
+  width: 50%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  border-right-style: solid;
-  border-left-style: solid;
-  border-width: 2px;
+  background-color:#F61067;
 }
 
 .newsletter_wrapper h2 {
-  color: #000000;
+  color:#F4F4ED;
   position: relative;
-  text-transform: uppercase;
   margin-bottom: 0.3em;
-  font-size: 2.9em;
+  font-size: 2.6em;
 }
 
 .newsletter_wrapper h1::before {
@@ -463,11 +460,24 @@ textarea:focus {
   transition: 0.3s;
 }
 
-.newsletter {
+.redesaboutus{
+  height: 40vw;
+  width: 50%;
+  display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #9ec9ff;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color:#F61067;
+}
+
+
+.redes i {
+  margin: 0 2.5vw; /* Añade margen entre los iconos si lo deseas */
+}
+
+.fa-solid{
+  font-size: 5vw;
 }
 
 .newsletter h1 {
@@ -475,3 +485,4 @@ textarea:focus {
   overflow: hidden;
   white-space: nowrap;
 }
+
