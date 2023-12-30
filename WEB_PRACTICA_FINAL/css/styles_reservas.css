@@ -227,6 +227,26 @@ padding-top: 14.5em;
   transform: translateY(0);
 }
 
+/* EFECTO BRILLO */
+
+.aboutustitle img:hover, .ubicationtitle img:hover {
+  
+  filter: drop-shadow(
+        0 0 5px #F61067
+    ) drop-shadow(
+        0 0 10px #F61067
+    ) drop-shadow(
+        0 0 15px #F61067
+    ) drop-shadow(
+        0 0 20px #F61067
+    ) drop-shadow(
+        0 0 10px rgba(255, 255, 255, 0.8)  /* Trazado difuminado blanco más pronunciado */
+    )
+    
+    ;
+}
+
+
 .card img {
   width: 100%;
   height: auto;
