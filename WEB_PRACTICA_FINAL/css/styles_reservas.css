@@ -31,6 +31,10 @@ body{
 }
 
 
+.aboutustitle p{
+  color: #000000;
+}
+
 .aboutustitle h1{
     font-weight: 800;
     font-size:7vw;
@@ -469,12 +473,25 @@ color: #F4F4ED;
   justify-content: center;
   text-align: center;
   background-color:#F61067;
+  padding: 2vw;
 }
 
+.redes{
+  margin-bottom: 7vw;
+  width: 100%;
+}
 
 .redes i {
-  margin: 0 2.5vw; /* Añade margen entre los iconos si lo deseas */
-color:#F4F4ED;
+  color:#F4F4ED;
+  margin-right: 6.7vw;
+}
+
+.footer-section h5, p{
+  color: #F4F4ED;
+}
+
+.footer-section h5{
+  font-size: 1.2vw;
 }
 
 .fa-solid{
@@ -485,5 +502,21 @@ color:#F4F4ED;
   margin-bottom: 0.6em;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.infofooter{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-section{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 3vw;
+}
+.infofooter p{
+  margin-bottom: 0rem;
+  font-size:1vw;
 }
 
