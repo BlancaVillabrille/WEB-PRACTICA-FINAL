@@ -45,6 +45,7 @@ body{
 
 .aboutustitle p{
   margin: 4vw;
+  font-size: 1.2em;
 }
 
 .aboutustitle img, .ubicationtitle img{
@@ -70,6 +71,19 @@ margin-bottom: 6em;
 background-position: center;
 
 }
+
+h1:hover {
+  color: var(--color-rosa-hover);
+  text-shadow:
+  0 0 7px #F4F4ED,
+  0 0 10px #F4F4ED,
+  0 0 21px #F4F4ED,
+  0 0 22px #F61067,
+  0 0 42px #F61067,
+  0 0 32px #F61067,
+  0 0 42px #F61067,
+  0 0 81px #F61067;
+  }
 
 .reviews h2{
   margin-bottom: 1.2em;
