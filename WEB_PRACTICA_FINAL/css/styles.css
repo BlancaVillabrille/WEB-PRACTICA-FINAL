@@ -214,7 +214,6 @@ nav {
 
 div.marquee {
     margin-top: 1em;
-    /* position: absolute; */
     z-index: 1;
     bottom: 0;
     overflow: hidden;
@@ -241,6 +240,9 @@ li.marquee_item > h2 {
     0% { transform: translateX(0) }
     100% { transform: translateX(-100%) }
 }
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* EMPIEZA CÓDIGO SECCIÓN INTRO */
 
 #intro {
     background-color: var(--color-blanco-fondo);
@@ -335,12 +337,17 @@ div#starGroup > img {
     width: 40%;
     position: absolute;
     right: 0;
-    bottom: -145%;
+    bottom: -140%;
 }
 
 div#starGroup > img:last-child {
     display: none;
 }
+
+/* //////////////////////////////////////// */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* EMPIEZA CÓDIGO SECCIÓN BOTONES */
 
 
 
