@@ -322,6 +322,34 @@ h3.LED_morado:hover {
     0 0 151px #5E239D;
 }
 
+div#estrellas {
+    display: none;
+}
+
+div#starLine > img {
+    height: 8em;
+    display: block;
+    position: fixed;
+    right: 0;
+}
+
+div#starGroup {
+    display: flex;
+    flex-direction: row;
+}
+
+div#starGroup > img {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    bottom: -135%;
+}
+
+div#starGroup > img:last-child {
+    display: none;
+}
+
+
 
 /* /////////////////////////////////////////// */
 
