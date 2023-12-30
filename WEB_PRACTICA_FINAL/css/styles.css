@@ -204,7 +204,7 @@ nav {
     height: 30%;
     position: absolute;
     z-index: 3;
-    bottom: 14%;
+    bottom: 11%;
     left: 30%;
 }
 
@@ -214,7 +214,7 @@ nav {
 
 div.marquee {
     margin-top: 1em;
-    position: absolute;
+    /* position: absolute; */
     z-index: 1;
     bottom: 0;
     overflow: hidden;
@@ -322,15 +322,8 @@ h3.LED_morado:hover {
     0 0 151px #5E239D;
 }
 
-div#estrellas {
+div#starLine {
     display: none;
-}
-
-div#starLine > img {
-    height: 8em;
-    display: block;
-    position: fixed;
-    right: 0;
 }
 
 div#starGroup {
@@ -342,7 +335,7 @@ div#starGroup > img {
     width: 40%;
     position: absolute;
     right: 0;
-    bottom: -135%;
+    bottom: -145%;
 }
 
 div#starGroup > img:last-child {
@@ -354,6 +347,17 @@ div#starGroup > img:last-child {
 /* /////////////////////////////////////////// */
 
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+    #text h3 {
+        font-size: 7em;
+    }
+
+    div#starGroup > img {
+        width: 35%;
+        bottom: -115%;
+    }
+}
 
 @media screen and (max-width: 1000px) {
     #portada_home img.starL {
@@ -371,7 +375,26 @@ div#starGroup > img:last-child {
     #portada_home > div.row > div.col-5 > img.logo_header {
         width: 80%;
     }
+
+    #portada_home > div.row > div.col-5 > img.gato_header {
+        bottom: 13%;
+    }
+
+    div#starGroup > img {
+        bottom: -105%;
+    }
 }
+
+@media screen and (max-width: 950px) {
+    #text h3 {
+        font-size: 6em;
+    }
+
+    div#starGroup > img {
+        bottom: -95%;
+    }
+}
+
 
 @media screen and (max-width: 850px) {
     #portada_home img.starL {
@@ -396,6 +419,14 @@ div#starGroup > img:last-child {
 
     #portada_home > div.row > div.col-5 > img.gato_header {
         left: 20%;
+    }
+
+    #text h3 {
+        font-size: 5em;
+    }
+
+    div#starGroup > img {
+        bottom: -80%;
     }
 }
 
@@ -456,6 +487,14 @@ div#starGroup > img:last-child {
     #portada_home img.starS {
         height: 6em;
     }
+
+    #text h3 {
+        font-size: 4em;
+    }
+
+    div#starGroup > img {
+        bottom: -70%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -466,6 +505,14 @@ div#starGroup > img:last-child {
     #portada_home > div.row > div.col-5 > img.logo_header {
         width: 100%;
         padding-top: 10%;
+    }
+
+    #text h3 {
+        font-size: 3em;
+    }
+
+    div#starGroup > img {
+        bottom: -60%;
     }
 }
 
@@ -501,7 +548,7 @@ div#starGroup > img:last-child {
     }
 
     #portada_home > div.row > div.col-5 > img.gato_header {
-        bottom: 9%;
+        bottom: 12%;
         height: 30%;
     }
 
@@ -525,6 +572,37 @@ div#starGroup > img:last-child {
     #portada_home img.starL {
         height: 8em;
     }
+
+    div#text  h3 {
+        font-size: 3em;
+    }
+
+    div#starLine {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    div#starLine > img {
+        margin-top: 1em;
+        height: 6em;
+    }
+    
+    div#starGroup > img:last-child {
+        display: block;
+        width: 30%;
+        position: absolute;
+        bottom: -55%;
+    }
+    
+    div#starGroup > img:nth-child(2) {
+        display: none;
+    }
+
+    div.text_img > img {
+        display: none;
+    }
     
 }
 
@@ -537,6 +615,7 @@ div#starGroup > img:last-child {
     #portada_home > div.row > div.col-5 > img.gato_header {
         height: 25%;
         left: 15%;
+        bottom: 10%;
     }
 
     #portada_home img.starL {
@@ -547,5 +626,12 @@ div#starGroup > img:last-child {
         height: 4em;
     }
     
+    div#starGroup > img:last-child {
+        bottom: -50%;
+    }
+
+    div#text  h3 {
+        font-size: 2.5em;
+    }
     
 }
