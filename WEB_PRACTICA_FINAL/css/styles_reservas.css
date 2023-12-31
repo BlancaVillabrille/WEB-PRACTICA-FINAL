@@ -313,14 +313,14 @@ padding-top: 14.5em;
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: nowrap;
-  padding: 4em 4em 4em 0em;
+  padding: 4vw 4vw 4vw 0vw;
   background-color:#5E239D;
   width: 30%;
 }
 
 .infoubication p, a{
 margin-bottom: 0;
-font-size: 1vw;
+font-size: 1.2vw;
 color: #F4F4ED;
 }
 
@@ -433,8 +433,8 @@ color: #F4F4ED;
   width: 100%;
   margin: 0px 0px 0px 23px;
   background-color: transparent;
-  
 }
+
 
 .redes i {
   color:#F4F4ED;
@@ -518,6 +518,21 @@ color: #F4F4ED;
   margin-right: 6.7vw;
 }
 
+.redes i:hover{
+  color:#1C1A31;
+  transition: color 0.3s ease;
+}
+
+.footer-section h5:hover{
+  color:#1C1A31;
+  transition: color 0.3s ease;
+}
+
+.footer-section p:hover{
+  color:#1C1A31;
+  transition: color 0.3s ease;
+}
+
 .footer-section h5, p{
   color: #F4F4ED;
 }
@@ -555,6 +570,18 @@ color: #F4F4ED;
 /* media queries tablet*/
 
 @media only screen and (max-width: 1150px) {
+
+  .botonparallax button {
+    width: 70%;
+    border-radius: 2em;
+    font-size: 1.4em;
+}
+
+.infoubication p, a{
+  margin-bottom: 0;
+  font-size: 1.7vw;
+  color: #F4F4ED;
+  }
 
   .footer {
     display: flex;
@@ -594,7 +621,7 @@ color: #F4F4ED;
   }
 
   .infofooter p{
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     line-height: 2.6vw;
   }
 
@@ -625,7 +652,7 @@ color: #F4F4ED;
 @media only screen and (max-width: 600px) {
 
   .aboutustitle p {
-    font-size: 4.5vw;
+    font-size: 4vw;
 }
 
   .sectionaboutus {
@@ -678,7 +705,7 @@ color: #F4F4ED;
 }
 
 .botonparallax button {
-  width: 70%;
+  width: 80%;
   border-radius: 2em;
   font-size: 1em; /* Ajusta el tamaño del texto dentro del botón según sea necesario */
 }
@@ -700,7 +727,7 @@ color: #F4F4ED;
 }
 
 .infoubication p, a {
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
   .infoubication {
@@ -723,11 +750,11 @@ color: #F4F4ED;
   }
 
   .input-field input{
-    margin: 0px 0px 0px 15px;
+    margin: 0px 0px 0px 5vw;
   }
 
   .newsletter_wrapper p {
-    font-size: 4vw;
+    font-size: 3.5vw;
     line-height: 6vw;
 }
 
@@ -752,7 +779,7 @@ color: #F4F4ED;
   }
 
   .aboutustitle h2{
-    font-size: 1em;
+    font-size: 1.4em;
     margin-bottom: 0.7em;
     margin-top: 1em;
   }
