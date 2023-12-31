@@ -189,19 +189,39 @@
             </div>
         </div>
         <div class="newsletter_wrapper">
-            <h2>¿Quieres unirte a <br>nuestra newsletter?</h2>
-            <p>Consigue un <b>10% de descuento</b>. <br> Suscríbete a nuestra newsletter y tendrás acceso a <br>novedades y ventajas exclusivas en tu email.</p>
-        
+            <h2>¿Quieres unirte a nuestra newsletter?</h2>
+            <p>Consigue un <b>10% de descuento</b>.<br> Suscríbete a nuestra newsletter y tendrás acceso a
+                novedades y ventajas exclusivas en tu email.</p>
+    
             <div class="input">
                 <div class="input-field">
-                    <input type="email" placeholder="Escribe su correo electrónico" spellcheck="false">
+                    <input type="email" id="emailInput" placeholder="Escribe su correo electrónico" spellcheck="false" required>
                 </div>
             </div>
-        
+    
             <div class="enviar">
-                <button class="">Enviar</button>
+                <button onclick="validarCorreo()">Enviar</button>
             </div>
         </div>
+    
+        <script>
+            function validarCorreo() {
+                var emailInput = document.getElementById('emailInput');
+    
+                if (emailInput.checkValidity()) {
+                    alert('¡Gracias por suscribirte!');
+                } else {
+                    if (emailInput.validity.typeMismatch) {
+                        emailInput.setCustomValidity('Por favor, ingresa una dirección de correo electrónico válida.');
+                    } else {
+                        emailInput.setCustomValidity('Este campo es obligatorio.');
+                    }
+    
+                    // Muestra el mensaje de validación personalizado
+                    emailInput.reportValidity();
+                }
+            }
+        </script>
     </div>
   </div>
  
