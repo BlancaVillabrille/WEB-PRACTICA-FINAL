@@ -14,6 +14,10 @@
     --color-verde-links: #00F0B5;
 }
 
+li{
+    list-style: none;
+}
+
 /* PRIMERA SECCION */
 .build-a-xmas{
     display: flex;
@@ -56,4 +60,39 @@
 .text-btn-eme-de-amores{
     display: flex;
     flex-direction: column;
+}
+
+
+
+
+/* ventana modal */
+
+.modal{
+    width: 100%;
+    --bs-modal-width: 90%;
+}
+.modal-dialog{
+    width: 100%;
+}
+.modal-content {
+    background-color: var(--color-blanco-fondo);
+}
+
+.btn-secondary {
+    --bs-btn-bg: var(--color-rosa-hover);
+    --bs-btn-border-color: none;
+}
+
+.flecha-merch-btn{
+    width: 8%;
+}
+
+
+
+.img-btn{
+    --bs-btn-bg: none;
+    --bs-btn-border-color: none;
+}
+.card-body{
+    display: none;
 }
