@@ -163,13 +163,22 @@ padding-top: 14.5em;
   border-radius: 25px;
   align-items: center;
   background-color: #00F0B5;
-  padding: 2em;
+  padding: 3em;
 }
 
 .card img {
   max-width: 7em; /* Ajusta el valor según tus necesidades */
   height: auto; /* Mantiene la proporción de la imagen */
 }
+
+.card p{
+  margin-bottom: 0em;
+}
+
+.card p{
+  margin-bottom: 0.5em;
+}
+
 
 .owl-dots {
   text-align: center;
@@ -244,21 +253,22 @@ padding-top: 14.5em;
         0 0 20px #F61067
     ) drop-shadow(
         0 0 10px rgba(255, 255, 255, 0.8)  /* Trazado difuminado blanco más pronunciado */
-    )
-    
-    ;
+    );
 }
 
 
 .card img {
   width: 100%;
   height: auto;
-  transition: transform 0.3s;
+  transition: transform 0.4s;
 }
 
-.card:hover img {
-  transform: scale(1.1);
+.card:hover img, .card:hover p, .card:hover b {
+  transform: scale(1.25);
+  transition: transform 0.4s;
 }
+
+
 
 .overlay {
   position: absolute;
@@ -320,15 +330,6 @@ color: #F4F4ED;
 }
 
 
-.ubicationtitle h1{
-  font-weight: 800;
-  font-size:7vw;
-  margin-block-end: 0em;
-  margin-block-start: 0em;
-  display: inline-block;
-  vertical-align: baseline;
-  margin-bottom: 0.6em;
-}
 
 
 .ubicationtitle > div {
@@ -547,15 +548,18 @@ color: #F4F4ED;
   font-size:0.9vw;
 }
 
-/* media queries */
+/* media queries tablet*/
 
 @media only screen and (max-width: 1150px) {
-
-
 
   .footer {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .reviews h2 {
+    font-size: 2.6vw;
+    margin-bottom: 0.6em;
   }
 
   .newsletter_wrapper{
@@ -602,4 +606,74 @@ color: #F4F4ED;
     padding: 0em;
     margin-bottom: 4em;
   }
+}
+
+/* media queries movil */
+
+@media only screen and (max-width: 600px) {
+
+
+  .sectionaboutus {
+    display: flex;
+    flex-direction: column-reverse;
+  }  
+  .churrourban {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .owl-carousel .owl-item img {
+    margin-bottom: 1.4em;
+  }
+
+
+
+  .input-field {
+    width: 16em;
+    height: 2.5em;
+  }
+
+  .input-field input{
+    margin: 0px 0px 0px 13px;
+  }
+
+  .newsletter_wrapper p{
+    padding: 0em 7em 0em 7em;
+    font-size: 2.4vw;
+    line-height: 2.8vw;
+  }
+
+  .newsletter_wrapper {
+    margin: 1em 0em 8em 0em;
+}
+
+  .enviar button{
+    height: 2.6em;
+  }
+
+  .infofooter p {
+    font-size: 1.6vw;
+}
+
+.aboutustitle h2{
+  font-size: 1.1em;
+  margin-bottom: 0.7em;
+  margin-top: 1em;
+}
+
+.reviews {
+  margin-bottom: 6em;
+}
+
+.redesaboutus {
+  margin: 0;
+}
+
+.infofooter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #F61067;
+}
 }
