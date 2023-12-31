@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="styles.css"> <!-- Agrega tu archivo de estilos aquí -->
+    <!-- JS DE ABOUT US -->
+    <script src="js/script_aboutus.js"></script>
 </head>
 
 <body>
@@ -146,28 +148,14 @@
     <!-- Contenido de footer -->
  <footer>
     <div class="footer">
-            <div class="newsletter_wrapper">
-              <h2>¿Quieres unirte a <br>nuestra newsletter?</h2>
-              <p>Consigue un <b>10% de descuento</b>. <br> Suscríbete a nuestra newsletter y tendrás acceso a <br>novedades y ventajas exclusivas en tu email.</p>
 
-            <div class="input">
-              <div class="placeholder">
-                 <input type="text" placeholder="Escribir correo electrónico">
-              </div>
-            </div>
-
-            <div class="enviar">
-              <button>Unirme</button>
-            </div>
-            </div>
-
-        <div class="redesaboutus">
-          <div class="redes">
-                <i class="fa-brands fa-instagram"style="font-size:4.5vw;"></i>
-                <i class="fa-brands fa-tiktok"style="font-size:4.5vw;"></i>
-                <i class="fa-brands fa-youtube"style="font-size:4.5vw;"></i>
-                <i class="fa-brands fa-twitter"style="font-size:4.5vw;"></i>
-          </div> 
+            <div class="redesaboutus">
+               <div class="redes">
+                  <i class="fa-brands fa-instagram"style="font-size:4.5vw;"></i>
+                  <i class="fa-brands fa-tiktok"style="font-size:4.5vw;"></i>
+                  <i class="fa-brands fa-youtube"style="font-size:4.5vw;"></i>
+                  <i class="fa-brands fa-twitter"style="font-size:4.5vw;"></i>
+                </div> 
             <div class="infofooter">
                 <div class="footer-section">
                    <h5><b>Build-a-Fit</b></h5>
@@ -197,14 +185,29 @@
                     <p>Política de devoluciones y anulaciones</p>
                     <p>Política de cookies</p>   
                 </div>
+        
+            </div>
+        </div>
+        <div class="newsletter_wrapper">
+            <h2>¿Quieres unirte a <br>nuestra newsletter?</h2>
+            <p>Consigue un <b>10% de descuento</b>. <br> Suscríbete a nuestra newsletter y tendrás acceso a <br>novedades y ventajas exclusivas en tu email.</p>
+        
+            <div class="input">
+                <div class="input-field">
+                    <input type="email" placeholder="Escribe su correo electrónico" spellcheck="false">
+                </div>
+            </div>
+        
+            <div class="enviar">
+                <button class="">Enviar</button>
             </div>
         </div>
     </div>
   </div>
-          
-     
+ 
 
-    <script>
+    </script>
+      <script>
         $(".carousel").owlCarousel({
             loop: true,
             margin: 25,
@@ -226,12 +229,16 @@
                 },
             }
         })
-    </script>
-    <script src="js/script_reservas.js"></script>
+      </script>
+   
+    
+
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>AOS.init();</script>
+</script>
 </body>
 
 </html>

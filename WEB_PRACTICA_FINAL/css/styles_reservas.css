@@ -306,11 +306,12 @@ padding-top: 14.5em;
   flex-wrap: nowrap;
   padding: 4em 4em 4em 0em;
   background-color:#5E239D;
+  width: 30%;
 }
 
 .infoubication p, a{
 margin-bottom: 0;
-font-size: 1em;
+font-size: 1vw;
 color: #F4F4ED;
 }
 
@@ -395,7 +396,7 @@ color: #F4F4ED;
   color:#F4F4ED;
   position: relative;
   margin-bottom: 0.3em;
-  font-size: 2.6em;
+  font-size: 3.2vw;
 }
 
 .newsletter_wrapper h1::before {
@@ -410,16 +411,13 @@ color: #F4F4ED;
 }
 
 .newsletter_wrapper p {
-  color:#F4F4ED;
-  font-size: 1.3em;
-  line-height: 1.2em;
+  color: #F4F4ED;
+  font-size: 1.7vw;
+  line-height: 2.2vw;
+  margin: 0;
 }
 
-.boton-enviar {
-  position: relative;
-}
-
-.placeholder {
+.input-field {
   margin: 1.4em 0em 0.8em 0em;
   opacity: 1;
   width: 24em;
@@ -428,27 +426,51 @@ color: #F4F4ED;
   display: flex;
   justify-content: flex-start;
   border-radius: 25px;
+  box-shadow:0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.placeholder input {
+.input-field input {
   border-style: hidden;
   width: 100%;
   margin: 0px 0px 0px 23px;
   background-color: transparent;
+  
+}
+
+
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+.input input:focus {
+  outline: none; /* Quitar el contorno predeterminado */
+  border: none;  /* Quitar el borde predeterminado */
 }
 
 .enviar button {
   width: 8.7em;
   height: 3em;
-  border-style: hidden;
-  background-color: #ffffff;
+  border-style:solid;
+  background-color: #F4F4ED;
   border-radius: 25px;
+  color:#F61067;
+  border-color: #F61067;
+  box-shadow:0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.enviar button:hover {
-  background-color: #000000;
-  color: #ffffff;
+.enviar button:hover{
+  background-color: #00F0B5;
+  border-style: solid;
+  border-width: 3px;
+  color: black;
+  border-color: #F4F4ED;
 }
+
+
 
 .newsletter_wrapper form button {
   position: absolute;
@@ -517,6 +539,6 @@ color: #F4F4ED;
 }
 .infofooter p{
   margin-bottom: 0rem;
-  font-size:1vw;
+  font-size:0.9vw;
 }
 
