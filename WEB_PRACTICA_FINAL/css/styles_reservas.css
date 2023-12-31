@@ -390,6 +390,7 @@ color: #F4F4ED;
   justify-content: center;
   text-align: center;
   background-color:#F61067;
+  padding-right: 4em;
 }
 
 .newsletter_wrapper h2 {
@@ -486,6 +487,10 @@ color: #F4F4ED;
   transition: 0.3s;
 }
 
+.footer{
+  background-color: #F61067;
+}
+
 .redesaboutus{
   height: 40vw;
   width: 50%;
@@ -495,11 +500,11 @@ color: #F4F4ED;
   justify-content: center;
   text-align: center;
   background-color:#F61067;
-  padding: 2vw;
+  padding-left: 4em;
 }
 
 .redes{
-  margin-bottom: 7vw;
+  margin-bottom: vw;
   width: 100%;
 }
 
@@ -542,3 +547,59 @@ color: #F4F4ED;
   font-size:0.9vw;
 }
 
+/* media queries */
+
+@media only screen and (max-width: 1150px) {
+
+
+
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .newsletter_wrapper{
+    width: 100%;
+    height: 60vw;
+    padding: 0em;
+    margin: 1em 0em 1em 0em;
+  }
+
+  .newsletter_wrapper h2{
+    font-size: 4.5vw;
+    margin-bottom: 0.5em;
+  }
+
+  .newsletter_wrapper p{
+    padding: 0em 9em 0em 9em;
+    font-size: 2.2vw;
+    line-height: 2.8vw;
+  }
+
+  .newsletter p{
+    font-size: 2vw;
+    line-height: 2.7vw;
+  }
+
+  .footer-section{
+    margin: 5vw;
+  }
+
+  .infofooter p{
+    font-size: 1.5vw;
+  }
+
+  .footer-section h5 {
+    font-size: 1.7vw;
+  }
+
+  .redes i {
+    margin: 6vw;
+    }
+
+  .redesaboutus{
+    width: 100%;
+    padding: 0em;
+    margin-bottom: 4em;
+  }
+}
