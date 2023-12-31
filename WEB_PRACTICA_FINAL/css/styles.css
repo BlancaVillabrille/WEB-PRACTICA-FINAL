@@ -349,7 +349,168 @@ div#starGroup > img:last-child {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* EMPIEZA CÓDIGO SECCIÓN BOTONES */
 
+#botones {
+    background-color: var(--color-blanco-fondo);
+    
+}
 
+div.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div.row {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.column {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.column img.starM {
+    width: 15em;
+    display: flex;
+    align-self: flex-start;
+    justify-content: right;
+
+    position: absolute;
+    z-index: 1;
+    bottom: -190%;
+}
+
+div.column img.starM.purple {
+    right: 70%;
+}
+
+div.column img.starM.green {
+    right: 35%;
+}
+
+div.column img.starM.pink {
+    right: 0%;
+}
+
+div.column img.starS {
+    width: 8em;
+    display: flex;
+    align-self: flex-end;
+    justify-content: left;
+
+    position: absolute;
+    z-index: 3;
+    margin: 8% 18%;
+}
+
+div.cuadrado {
+    margin-bottom: 1em;
+    width: 15em;
+    height: 10em;
+    background-color: var(--color-blanco-fondo);
+    border: 3px solid #1C1A31;
+    border-radius: 30px;
+
+    display: flex;
+    align-content: center;
+    position: absolute;
+    z-index: 2;
+}
+
+div.cuadrado > h2 {
+    font-size: 2em;
+    font-weight: bolder;
+    color: #1C1A31;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+div.column button {
+    padding: 1em;
+    margin-top: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.column button > a {
+    text-decoration: none;
+    color: #F4F4ED;
+    font-weight: 400;
+    font-size: 2em;
+    padding-right: 0.5em;
+}
+
+div.column button.morado {
+    border: 2px solid #5E239D;
+    border-radius: 40px;
+    background-color: #5E239D;
+}
+
+div.column button.morado:hover {
+    background-color: #F4F4ED;
+}
+
+div.column button.morado:hover > a {
+    color: #5E239D;
+    font-weight: bold;
+}
+
+button.morado:hover > svg > path {
+    stroke: #5E239D;
+    stroke-width: 4;
+}
+
+div.column button.verde {
+    border: 2px solid #00F0B5;
+    border-radius: 40px;
+    background-color: #00F0B5;
+}
+
+div.column button.verde:hover {
+    background-color: #F4F4ED;
+}
+
+div.column button.verde:hover > a {
+    color: #00F0B5;
+    font-weight: bold;
+}
+
+button.verde:hover > svg > path {
+    stroke: #00F0B5;
+    stroke-width: 4;
+}
+
+div.column button.rosa {
+    border: 2px solid #F61067;
+    border-radius: 40px;
+    background-color: #F61067;
+}
+
+div.column button.rosa:hover {
+    background-color: #F4F4ED;
+}
+
+div.column button.rosa:hover > a {
+    color: #F61067;
+    font-weight: bold;
+}
+
+button.rosa:hover > svg > path {
+    stroke: #F61067;
+    stroke-width: 4;
+}
 
 /* /////////////////////////////////////////// */
 
