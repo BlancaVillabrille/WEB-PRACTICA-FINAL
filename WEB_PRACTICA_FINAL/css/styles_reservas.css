@@ -291,9 +291,8 @@ padding-top: 14.5em;
   margin: 10px 0;
 }
 
+
 /* ubicación */
-
-
 
 .sectionubication{
   display: flex;
@@ -330,8 +329,6 @@ color: #F4F4ED;
 }
 
 
-
-
 .ubicationtitle > div {
   width: 75%;
 }
@@ -354,7 +351,7 @@ color: #F4F4ED;
   border-width: 2px;
   width: 70%;
   align-items: center;
-  padding: 4em;
+  padding: 4vw;
 }
 
 .google-maps div {
@@ -439,6 +436,13 @@ color: #F4F4ED;
   
 }
 
+.redes i {
+  color:#F4F4ED;
+  margin-right: 6.7vw;
+  width: 4vw;
+  font-size: 4vw;
+}
+
 
 
 .error-message {
@@ -505,8 +509,8 @@ color: #F4F4ED;
 }
 
 .redes{
-  margin-bottom: vw;
   width: 100%;
+  margin-bottom: 6vw;
 }
 
 .redes i {
@@ -564,13 +568,13 @@ color: #F4F4ED;
 
   .newsletter_wrapper{
     width: 100%;
-    height: 60vw;
+    height: 70vw;
     padding: 0em;
     margin: 1em 0em 1em 0em;
   }
 
   .newsletter_wrapper h2{
-    font-size: 4.5vw;
+    font-size: 5vw;
     margin-bottom: 0.5em;
   }
 
@@ -591,6 +595,7 @@ color: #F4F4ED;
 
   .infofooter p{
     font-size: 1.5vw;
+    line-height: 2.6vw;
   }
 
   .footer-section h5 {
@@ -598,9 +603,16 @@ color: #F4F4ED;
   }
 
   .redes i {
-    margin: 6vw;
-    }
+    margin:6vw;
+    width: 5vw;
+    font-size: 6vw;
+  }
+  
 
+  .redes{
+    width: 100%;
+    margin-bottom:0;
+  }
   .redesaboutus{
     width: 100%;
     padding: 0em;
@@ -612,10 +624,13 @@ color: #F4F4ED;
 
 @media only screen and (max-width: 600px) {
 
+  .aboutustitle p {
+    font-size: 4.5vw;
+}
 
   .sectionaboutus {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }  
   .churrourban {
     display: flex;
@@ -623,30 +638,110 @@ color: #F4F4ED;
     width: 100%;
   }
 
+  .imagen_fondo {
+    margin-bottom: 5em;
+  }
+
+  .fa-solid, .fas {
+    width: 80%;
+  }
+
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 80%;
+}
   .owl-carousel .owl-item img {
     margin-bottom: 1.4em;
   }
 
+  .sectionubication {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
 
+.carousel .card {
+  padding: 0;
+}
+.owl-carousel .owl-item img {
+  width: 65%;
+  margin: 1em;
+}
+
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+  display: block;
+  margin-top: 1.5em;
+}
+.card:hover img, .card:hover p, .card:hover b {
+  transform: scale(1);
+}
+
+.botonparallax button {
+  width: 70%;
+  border-radius: 2em;
+  font-size: 1em; /* Ajusta el tamaño del texto dentro del botón según sea necesario */
+}
+
+.newsletter_wrapper h2{
+  font-size: 7vw;
+  margin-bottom: 0em;
+}
+
+.newsletter_wrapper p {
+  padding: 1.3em;
+  font-size: 4vw;
+  line-height: 5vw;
+}
+
+.google-maps div iframe {
+  height: 85vw;
+  width: 80vw;
+}
+
+.infoubication p, a {
+  font-size: 4vw;
+}
+
+  .infoubication {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0vw 8vw 8vw 8vw;
+  }
+
+  .google-maps {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+  }
 
   .input-field {
-    width: 16em;
-    height: 2.5em;
+    width: 73vw;
+    margin: 0em;
+    margin-bottom: 0.8em;
   }
 
   .input-field input{
-    margin: 0px 0px 0px 13px;
+    margin: 0px 0px 0px 15px;
   }
 
-  .newsletter_wrapper p{
-    padding: 0em 7em 0em 7em;
-    font-size: 2.4vw;
-    line-height: 2.8vw;
+  .newsletter_wrapper p {
+    font-size: 4vw;
+    line-height: 6vw;
+}
+
+
+  .input-field input {
+    font-size: 4vw;
   }
 
   .newsletter_wrapper {
-    margin: 1em 0em 8em 0em;
-}
+    height: 100%;
+    margin-bottom: 5em;
+    margin-top: 5em;
+
+  }
 
   .enviar button{
     height: 2.6em;
@@ -654,13 +749,13 @@ color: #F4F4ED;
 
   .infofooter p {
     font-size: 1.6vw;
-}
+  }
 
-.aboutustitle h2{
-  font-size: 1.1em;
-  margin-bottom: 0.7em;
-  margin-top: 1em;
-}
+  .aboutustitle h2{
+    font-size: 1em;
+    margin-bottom: 0.7em;
+    margin-top: 1em;
+  }
 
 .reviews {
   margin-bottom: 6em;
@@ -668,6 +763,7 @@ color: #F4F4ED;
 
 .redesaboutus {
   margin: 0;
+  height: 100%;
 }
 
 .infofooter {
@@ -675,5 +771,32 @@ color: #F4F4ED;
   flex-direction: column;
   width: 100%;
   background-color: #F61067;
+  margin-bottom: 3em;
 }
+
+.redes {
+  margin-bottom: 0.5em;
+  font-size: 12vw;
+}
+
+.redes i {
+  font-size: 7vw;
+  margin: 7vw;
+}
+
+.footer-section p{
+  font-size: 1em;
+  margin-bottom: 0.8em;
+}
+
+.footer-section {
+  margin: 7vw;
+}
+
+.footer-section h5{
+  font-size: 4.8vw;
+  margin-bottom: 1.2em;
+}
+
+
 }
