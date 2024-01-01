@@ -114,6 +114,7 @@ padding-top: 14.5em;
     background-color: #F61067;
     color: #F4F4ED;
     border-style: none;
+    border-radius: 30px;
 }
 
 .btn-outline-secondary:hover{
@@ -377,6 +378,16 @@ color: #F4F4ED;
 .footer{
   display: flex;
   flex-direction: row;
+}
+
+.footer-section a {
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.footer-section a:hover {
+  color:#1C1A31;
+  transition: color 0.3s ease;
 }
 
 .newsletter_wrapper {
