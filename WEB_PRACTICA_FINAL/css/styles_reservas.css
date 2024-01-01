@@ -14,10 +14,10 @@
     --color-verde-links: #00F0B5;
 }
 
+
 body{
     background-color: #F4F4ED;
 }
-
 
 
 .sectionaboutus{
@@ -680,6 +680,16 @@ color: #F4F4ED;
     margin-bottom: 5em;
   }
 
+  .btn-outline-secondary {
+    background-color: #F61067;
+    color: #F4F4ED;
+    border-style: none;
+    border-radius: 30px;
+    margin: 1em;
+    font-size: 0.9em;
+}
+
+
   .fa-solid, .fas {
     width: 80%;
   }
@@ -790,7 +800,7 @@ color: #F4F4ED;
   }
 
   .aboutustitle h2{
-    font-size: 1.4em;
+    font-size: 1em;
     margin-bottom: 0.7em;
     margin-top: 1em;
   }
@@ -823,7 +833,7 @@ color: #F4F4ED;
 }
 
 .footer-section p{
-  font-size: 0.8em;
+  font-size: 0.6em;
   margin-bottom: 0.8em;
 }
 
@@ -832,7 +842,7 @@ color: #F4F4ED;
 }
 
 .footer-section h5{
-  font-size: 4.8vw;
+  font-size: 4.5vw;
   margin-bottom: 1.2em;
 }
 
