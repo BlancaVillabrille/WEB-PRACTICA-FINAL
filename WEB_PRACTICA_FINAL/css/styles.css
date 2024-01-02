@@ -419,7 +419,8 @@ div.cuadrado {
     border-radius: 30px;
 
     display: flex;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     z-index: 2;
 }
@@ -525,6 +526,23 @@ button.rosa:hover > svg > path {
         width: 35%;
         bottom: -115%;
     }
+
+    div.column img.starM {
+        bottom: -175%;
+    }
+
+    div.row {
+        margin: 0 1em;
+        width: 90%;
+    }
+
+    div.cuadrado {
+        margin-right: 1em;
+    }
+
+    div.column button {
+        margin-top: 80%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -551,6 +569,18 @@ button.rosa:hover > svg > path {
     div#starGroup > img {
         bottom: -105%;
     }
+
+    div.cuadrado {
+        width: 12em;
+    }
+
+    div.cuadrado > h2 {
+        font-size: 1.5em;
+    }
+
+    div.column button > a {
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -560,6 +590,29 @@ button.rosa:hover > svg > path {
 
     div#starGroup > img {
         bottom: -95%;
+    }
+
+    div.cuadrado {
+        width: 11em;
+        height: 9em;
+    }
+
+    div.column img.starS {
+        width: 6em;
+        margin: 9% 17%;
+    }
+
+    div.column img.starM {
+        width: 13em;
+        bottom: -160%;
+    }
+
+    div.column img.starM.green {
+        right: 32%;
+    }
+
+    div.column img.starM.purple {
+        right: 63%;
     }
 }
 
@@ -595,6 +648,40 @@ button.rosa:hover > svg > path {
 
     div#starGroup > img {
         bottom: -80%;
+    }
+
+    div.column img.starM {
+        bottom: -145%;
+    }
+
+    div.column button {
+        margin-top: 80%;
+    }
+
+    div.cuadrado {
+        height: 7em;
+    }
+
+    div.cuadrado > h2 {
+        font-size: 1em;
+    }
+
+    div.column img.starS {
+        width: 4em;
+        margin: 9% 19%;
+    }
+
+    div.column img.starM {
+        width: 10em;
+        bottom: -140%;
+    }
+
+    div.column img.starM.green {
+        right: 32%;
+    }
+
+    div.column img.starM.purple {
+        right: 63%;
     }
 }
 
@@ -663,6 +750,35 @@ button.rosa:hover > svg > path {
     div#starGroup > img {
         bottom: -70%;
     }
+
+    #botones > div > div.row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.column img.starM.green {
+        right: 28%;
+        bottom: -135%;
+    }
+
+    div.column img.starM.purple {
+        right: 28%;
+        bottom: -100%;
+    }
+
+    div.column img.starM.pink {
+        right: 28%;
+        bottom: -172%;
+    }
+
+    div.column > button {
+        margin-bottom: 4em;
+        margin-top: 90%;
+    }
+
+    #text {
+        padding-bottom: 4em;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -681,6 +797,55 @@ button.rosa:hover > svg > path {
 
     div#starGroup > img {
         bottom: -60%;
+    }
+
+    div.column img.starM.purple {
+        bottom: -90%;
+        right: 20%;
+    }
+
+    div.column img.starM.green {
+        bottom: -130%;
+        right: 20%;
+    }
+
+    div.column img.starM.pink {
+        bottom: -172%;
+        right: 20%;
+    }
+
+    div.column > button {
+        margin-top: 100%;
+        margin-bottom: 6em;
+    }
+
+    #text {
+        padding-bottom: 6em;
+    }
+
+    div.column img.starS {
+        margin: 12% 20%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    div.column img.starM.purple {
+        bottom: -86%;
+        right: 20%;
+    }
+
+    div.column img.starM.green {
+        bottom: -127%;
+        right: 20%;
+    }
+
+    div.column img.starM.pink {
+        bottom: -170%;
+        right: 20%;
+    }
+
+    div.column > button {
+        margin-top: 125%;
     }
 }
 
@@ -771,7 +936,58 @@ button.rosa:hover > svg > path {
     div.text_img > img {
         display: none;
     }
+
+    div.column > button {
+        margin-top: 140%;
+        margin-bottom: 8em;
+    }
+
+    div.column img.starM.purple {
+        bottom: -95%;
+        right: 20%;
+    }
+
+    div.column img.starM.green {
+        bottom: -145%;
+        right: 20%;
+    }
+
+    div.column img.starM.pink {
+        bottom: -193%;
+        right: 17%;
+    }
+
+    #text {
+        padding-bottom: 8em;
+    }
+
+    div.column img.starS {
+        margin: 15% 25%;
+    }
     
+}
+
+@media screen and (max-width: 450px) {
+
+    div.column > button {
+        margin-top: 160%;
+        margin-bottom: 8em;
+    }
+
+    div.column img.starM.purple {
+        bottom: -105%;
+        right: 15%;
+    }
+
+    div.column img.starM.green {
+        bottom: -152%;
+        right: 15%;
+    }
+
+    div.column img.starM.pink {
+        bottom: -200%;
+        right: 12%;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -801,5 +1017,52 @@ button.rosa:hover > svg > path {
     div#text  h3 {
         font-size: 2.5em;
     }
+
+    div.column > button {
+        margin-top: 190%;
+        margin-bottom: 8em;
+    }
+
+    div.column img.starM.purple {
+        bottom: -90%;
+        right: 10%;
+    }
+
+    div.column img.starM.green {
+        bottom: -138%;
+        right: 10%;
+    }
+
+    div.column img.starM.pink {
+        bottom: -187%;
+        right: 8%;
+    }
     
+}
+
+@media screen and (max-width: 385px) {
+
+    div.column > button {
+        margin-top: 205%;
+        margin-bottom: 6em;
+    }
+
+    div.column img.starM.purple {
+        bottom: -95%;
+        right: 6%;
+    }
+
+    div.column img.starM.green {
+        bottom: -141%;
+        right: 6%;
+    }
+
+    div.column img.starM.pink {
+        bottom: -182%;
+        right: 4%;
+    }
+
+    div.column img.starS {
+        margin: 20% 25%;
+    }
 }
