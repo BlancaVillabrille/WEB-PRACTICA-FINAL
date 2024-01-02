@@ -65,11 +65,64 @@ li{
 
 
 
+/* GALERIA */
+
+
+.color-circulo{
+    border: black;
+    border-radius: 20px;
+}
+.album{
+    padding-top: 4em;
+}
+.col {
+    display: flex;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* IMAGENES */
+.img-general {
+    height: 20vw;
+}
+#img-parent{
+    position: relative;
+}
+.img1{
+    position: relative;
+    z-index: 2;
+}
+.img2{
+    position: absolute;
+    z-index: 1;
+    left: -50px;
+    height: 26vw;
+    bottom: 18px;
+}
+
+
+
+
+
+
+
+
+
+
 /* ventana modal */
 
 .modal{
     width: 100%;
     --bs-modal-width: 90%;
+    --bs-modal-border-radius: 30px;
+    --bs-modal-header-padding: 2em 2rem;
+}
+.modal-header {
+    border-bottom: none;
 }
 .modal-dialog{
     width: 100%;
@@ -77,21 +130,113 @@ li{
 .modal-content {
     background-color: var(--color-blanco-fondo);
 }
+.modal-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 11em;
+}
+.texto-modal{
+    display: flex;
+    flex-direction: column;
+}
+.seleccion{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0em;
+}
+.h1-seleccion{
+    font-weight: 800;
+}
+.h2-seleccion{
+    font-size: 1.2em;
+}
 
-.btn-secondary {
+/* BOTONES COLOR */
+.btn-color{
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 30px;
+}
+.btn-color-1{
+    background-color: var(--color-rosa-hover);
+}
+.btn-color-2{
+    background-color: var(--color-morado-boton);
+}
+.btn-color-3{
+    background-color: var(--color-verde-links);
+}
+.btn-color-4{
+    background-color: var(--color-blanco-fondo);
+    border: var(--color-rosa-hover) solid 2px;
+}
+.btn-color-5{
+    background-color: var(--color-negro-texto);
+}
+.lista-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+/* BOTONES TALLA */
+.btn-talla{
+    border: var(--color-rosa-hover) solid 2px;
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+}
+.btn-talla:hover{
+    background-color: var(--color-rosa-hover);
+    color: var(--color-blanco-fondo);
+}
+
+/* BOTONES CANTIDAD */
+.btn-cantidad{
+    border: var(--color-rosa-hover) solid 2px;
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+.btn-cantidad-menos{
+    align-items: flex-start;
+}
+.btn-cantidad:hover{
+    background-color: var(--color-rosa-hover);
+    color: var(--color-blanco-fondo);
+}
+
+/* BOTONES CANTIDAD */
+.btn-comprar{
+    display: flex;
+    padding: 2em 0em;
+}
+.btn-primary{
+    --bs-btn-hover-bg: none;
+    --bs-btn-active-bg: none;
+    --bs-btn-bg: none;
+    --bs-btn-border-color: none;    
+}
+.btn-secondary{
+    border-radius: 30px;
     --bs-btn-bg: var(--color-rosa-hover);
     --bs-btn-border-color: none;
 }
 
+
+
 .flecha-merch-btn{
     width: 8%;
-}
-
-
-
-.img-btn{
-    --bs-btn-bg: none;
-    --bs-btn-border-color: none;
 }
 .card-body{
     display: none;
