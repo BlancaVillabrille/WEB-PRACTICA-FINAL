@@ -204,7 +204,7 @@ nav {
     height: 30%;
     position: absolute;
     z-index: 3;
-    bottom: 14%;
+    bottom: 11%;
     left: 30%;
 }
 
@@ -214,7 +214,6 @@ nav {
 
 div.marquee {
     margin-top: 1em;
-    position: absolute;
     z-index: 1;
     bottom: 0;
     overflow: hidden;
@@ -241,6 +240,9 @@ li.marquee_item > h2 {
     0% { transform: translateX(0) }
     100% { transform: translateX(-100%) }
 }
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* EMPIEZA CÓDIGO SECCIÓN INTRO */
 
 #intro {
     background-color: var(--color-blanco-fondo);
@@ -322,10 +324,226 @@ h3.LED_morado:hover {
     0 0 151px #5E239D;
 }
 
+div#starLine {
+    display: none;
+}
+
+div#starGroup {
+    display: flex;
+    flex-direction: row;
+}
+
+div#starGroup > img {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    bottom: -140%;
+}
+
+div#starGroup > img:last-child {
+    display: none;
+}
+
+/* //////////////////////////////////////// */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* EMPIEZA CÓDIGO SECCIÓN BOTONES */
+
+#botones {
+    background-color: var(--color-blanco-fondo);
+    
+}
+
+div.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div.row {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.column {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.column img.starM {
+    width: 15em;
+    display: flex;
+    align-self: flex-start;
+    justify-content: right;
+
+    position: absolute;
+    z-index: 1;
+    bottom: -190%;
+}
+
+div.column img.starM.purple {
+    right: 70%;
+}
+
+div.column img.starM.green {
+    right: 35%;
+}
+
+div.column img.starM.pink {
+    right: 0%;
+}
+
+div.column img.starS {
+    width: 8em;
+    display: flex;
+    align-self: flex-end;
+    justify-content: left;
+
+    position: absolute;
+    z-index: 3;
+    margin: 8% 18%;
+}
+
+div.cuadrado {
+    margin-bottom: 1em;
+    width: 15em;
+    height: 10em;
+    background-color: var(--color-blanco-fondo);
+    border: 3px solid #1C1A31;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+}
+
+div.cuadrado > h2 {
+    font-size: 2em;
+    font-weight: bolder;
+    color: #1C1A31;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+div.column button {
+    padding: 1em;
+    margin-top: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.column button > a {
+    text-decoration: none;
+    color: #F4F4ED;
+    font-weight: 400;
+    font-size: 2em;
+    padding-right: 0.5em;
+}
+
+div.column button.morado {
+    border: 2px solid #5E239D;
+    border-radius: 40px;
+    background-color: #5E239D;
+}
+
+div.column button.morado:hover {
+    background-color: #F4F4ED;
+}
+
+div.column button.morado:hover > a {
+    color: #5E239D;
+    font-weight: bold;
+}
+
+button.morado:hover > svg > path {
+    stroke: #5E239D;
+    stroke-width: 4;
+}
+
+div.column button.verde {
+    border: 2px solid #00F0B5;
+    border-radius: 40px;
+    background-color: #00F0B5;
+}
+
+div.column button.verde:hover {
+    background-color: #F4F4ED;
+}
+
+div.column button.verde:hover > a {
+    color: #00F0B5;
+    font-weight: bold;
+}
+
+button.verde:hover > svg > path {
+    stroke: #00F0B5;
+    stroke-width: 4;
+}
+
+div.column button.rosa {
+    border: 2px solid #F61067;
+    border-radius: 40px;
+    background-color: #F61067;
+}
+
+div.column button.rosa:hover {
+    background-color: #F4F4ED;
+}
+
+div.column button.rosa:hover > a {
+    color: #F61067;
+    font-weight: bold;
+}
+
+button.rosa:hover > svg > path {
+    stroke: #F61067;
+    stroke-width: 4;
+}
 
 /* /////////////////////////////////////////// */
 
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+    #text h3 {
+        font-size: 7em;
+    }
+
+    div#starGroup > img {
+        width: 35%;
+        bottom: -115%;
+    }
+
+    div.column img.starM {
+        bottom: -175%;
+    }
+
+    div.row {
+        margin: 0 1em;
+        width: 90%;
+    }
+
+    div.cuadrado {
+        margin-right: 1em;
+    }
+
+    div.column button {
+        margin-top: 80%;
+    }
+}
 
 @media screen and (max-width: 1000px) {
     #portada_home img.starL {
@@ -343,7 +561,61 @@ h3.LED_morado:hover {
     #portada_home > div.row > div.col-5 > img.logo_header {
         width: 80%;
     }
+
+    #portada_home > div.row > div.col-5 > img.gato_header {
+        bottom: 13%;
+    }
+
+    div#starGroup > img {
+        bottom: -105%;
+    }
+
+    div.cuadrado {
+        width: 12em;
+    }
+
+    div.cuadrado > h2 {
+        font-size: 1.5em;
+    }
+
+    div.column button > a {
+        font-size: 1em;
+    }
 }
+
+@media screen and (max-width: 950px) {
+    #text h3 {
+        font-size: 6em;
+    }
+
+    div#starGroup > img {
+        bottom: -95%;
+    }
+
+    div.cuadrado {
+        width: 11em;
+        height: 9em;
+    }
+
+    div.column img.starS {
+        width: 6em;
+        margin: 9% 17%;
+    }
+
+    div.column img.starM {
+        width: 13em;
+        bottom: -160%;
+    }
+
+    div.column img.starM.green {
+        right: 32%;
+    }
+
+    div.column img.starM.purple {
+        right: 63%;
+    }
+}
+
 
 @media screen and (max-width: 850px) {
     #portada_home img.starL {
@@ -368,6 +640,48 @@ h3.LED_morado:hover {
 
     #portada_home > div.row > div.col-5 > img.gato_header {
         left: 20%;
+    }
+
+    #text h3 {
+        font-size: 5em;
+    }
+
+    div#starGroup > img {
+        bottom: -80%;
+    }
+
+    div.column img.starM {
+        bottom: -145%;
+    }
+
+    div.column button {
+        margin-top: 80%;
+    }
+
+    div.cuadrado {
+        height: 7em;
+    }
+
+    div.cuadrado > h2 {
+        font-size: 1em;
+    }
+
+    div.column img.starS {
+        width: 4em;
+        margin: 9% 19%;
+    }
+
+    div.column img.starM {
+        width: 10em;
+        bottom: -140%;
+    }
+
+    div.column img.starM.green {
+        right: 32%;
+    }
+
+    div.column img.starM.purple {
+        right: 63%;
     }
 }
 
@@ -428,6 +742,43 @@ h3.LED_morado:hover {
     #portada_home img.starS {
         height: 6em;
     }
+
+    #text h3 {
+        font-size: 4em;
+    }
+
+    div#starGroup > img {
+        bottom: -70%;
+    }
+
+    #botones > div > div.row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.column img.starM.green {
+        right: 28%;
+        bottom: -135%;
+    }
+
+    div.column img.starM.purple {
+        right: 28%;
+        bottom: -100%;
+    }
+
+    div.column img.starM.pink {
+        right: 28%;
+        bottom: -172%;
+    }
+
+    div.column > button {
+        margin-bottom: 4em;
+        margin-top: 90%;
+    }
+
+    #text {
+        padding-bottom: 4em;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -438,6 +789,63 @@ h3.LED_morado:hover {
     #portada_home > div.row > div.col-5 > img.logo_header {
         width: 100%;
         padding-top: 10%;
+    }
+
+    #text h3 {
+        font-size: 3em;
+    }
+
+    div#starGroup > img {
+        bottom: -60%;
+    }
+
+    div.column img.starM.purple {
+        bottom: -90%;
+        right: 20%;
+    }
+
+    div.column img.starM.green {
+        bottom: -130%;
+        right: 20%;
+    }
+
+    div.column img.starM.pink {
+        bottom: -172%;
+        right: 20%;
+    }
+
+    div.column > button {
+        margin-top: 100%;
+        margin-bottom: 6em;
+    }
+
+    #text {
+        padding-bottom: 6em;
+    }
+
+    div.column img.starS {
+        margin: 12% 20%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    div.column img.starM.purple {
+        bottom: -86%;
+        right: 20%;
+    }
+
+    div.column img.starM.green {
+        bottom: -127%;
+        right: 20%;
+    }
+
+    div.column img.starM.pink {
+        bottom: -170%;
+        right: 20%;
+    }
+
+    div.column > button {
+        margin-top: 125%;
     }
 }
 
@@ -473,7 +881,7 @@ h3.LED_morado:hover {
     }
 
     #portada_home > div.row > div.col-5 > img.gato_header {
-        bottom: 9%;
+        bottom: 12%;
         height: 30%;
     }
 
@@ -497,7 +905,89 @@ h3.LED_morado:hover {
     #portada_home img.starL {
         height: 8em;
     }
+
+    div#text  h3 {
+        font-size: 3em;
+    }
+
+    div#starLine {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
     
+    div#starLine > img {
+        margin-top: 1em;
+        height: 6em;
+    }
+    
+    div#starGroup > img:last-child {
+        display: block;
+        width: 30%;
+        position: absolute;
+        bottom: -55%;
+    }
+    
+    div#starGroup > img:nth-child(2) {
+        display: none;
+    }
+
+    div.text_img > img {
+        display: none;
+    }
+
+    div.column > button {
+        margin-top: 140%;
+        margin-bottom: 8em;
+    }
+
+    div.column img.starM.purple {
+        bottom: -95%;
+        right: 20%;
+    }
+
+    div.column img.starM.green {
+        bottom: -145%;
+        right: 20%;
+    }
+
+    div.column img.starM.pink {
+        bottom: -193%;
+        right: 17%;
+    }
+
+    #text {
+        padding-bottom: 8em;
+    }
+
+    div.column img.starS {
+        margin: 15% 25%;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+
+    div.column > button {
+        margin-top: 160%;
+        margin-bottom: 8em;
+    }
+
+    div.column img.starM.purple {
+        bottom: -105%;
+        right: 15%;
+    }
+
+    div.column img.starM.green {
+        bottom: -152%;
+        right: 15%;
+    }
+
+    div.column img.starM.pink {
+        bottom: -200%;
+        right: 12%;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -509,6 +999,7 @@ h3.LED_morado:hover {
     #portada_home > div.row > div.col-5 > img.gato_header {
         height: 25%;
         left: 15%;
+        bottom: 10%;
     }
 
     #portada_home img.starL {
@@ -519,5 +1010,59 @@ h3.LED_morado:hover {
         height: 4em;
     }
     
+    div#starGroup > img:last-child {
+        bottom: -50%;
+    }
+
+    div#text  h3 {
+        font-size: 2.5em;
+    }
+
+    div.column > button {
+        margin-top: 190%;
+        margin-bottom: 8em;
+    }
+
+    div.column img.starM.purple {
+        bottom: -90%;
+        right: 10%;
+    }
+
+    div.column img.starM.green {
+        bottom: -138%;
+        right: 10%;
+    }
+
+    div.column img.starM.pink {
+        bottom: -187%;
+        right: 8%;
+    }
     
+}
+
+@media screen and (max-width: 385px) {
+
+    div.column > button {
+        margin-top: 205%;
+        margin-bottom: 6em;
+    }
+
+    div.column img.starM.purple {
+        bottom: -95%;
+        right: 6%;
+    }
+
+    div.column img.starM.green {
+        bottom: -141%;
+        right: 6%;
+    }
+
+    div.column img.starM.pink {
+        bottom: -182%;
+        right: 4%;
+    }
+
+    div.column img.starS {
+        margin: 20% 25%;
+    }
 }
