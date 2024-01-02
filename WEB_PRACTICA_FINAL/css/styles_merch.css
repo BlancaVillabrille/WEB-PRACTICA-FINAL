@@ -18,6 +18,7 @@ li{
     list-style: none;
 }
 
+
 /* PRIMERA SECCION */
 .build-a-xmas{
     display: flex;
@@ -66,8 +67,22 @@ li{
 
 
 /* GALERIA */
-
-
+h3{
+    font-size: 8vw;
+    font-weight: 800;
+}
+.sec-merch>div:first-child{
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    margin-left: 3em;
+    margin-top: 3em;
+}
+.sec-merch>div:first-child > img{
+    width: 6vw;
+    position: relative;
+    top: -0.4em;
+}
 .color-circulo{
     border: black;
     border-radius: 20px;
@@ -81,8 +96,11 @@ li{
 .container{
     display: flex;
     flex-direction: column;
+    margin-left: 8em;
 }
-
+.row-2{
+    margin-top: 8em;
+}
 
 
 /* IMAGENES */
@@ -99,12 +117,18 @@ li{
 .img2{
     position: absolute;
     z-index: 1;
-    left: -50px;
+    left: -2em;
     height: 26vw;
     bottom: 18px;
 }
-
-
+.img-modal-producto{
+    height: 40em;
+    top: 2em;
+}
+.img-modal-estrella{
+    height: 40em;
+    bottom: 7em
+}
 
 
 
