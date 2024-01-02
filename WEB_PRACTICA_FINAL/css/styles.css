@@ -513,6 +513,30 @@ button.rosa:hover > svg > path {
     stroke-width: 4;
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* EMPIEZA CÓDIGO SECCIÓN COMMUNITY */
+
+section#community {
+    min-height: 100vh;
+    background-color: var(--color-blanco-fondo);
+}
+
+div.section_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.section_title > h1 {
+    font-size: 6em;
+    font-weight: bolder;
+}
+
+div.section_title img.LED_flecha {
+    height: 6em;
+}
+
+
 /* /////////////////////////////////////////// */
 
 /* MEDIA QUERIES */

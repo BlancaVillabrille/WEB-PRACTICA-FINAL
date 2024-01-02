@@ -13,6 +13,15 @@ $(document).ready(function(){
         }
     );
 
+    $(".section_title").hover(
+        function(){
+            $(".section_title > img.LED_flecha").attr('src', 'media/img/flecha_LED.png');
+        },
+        function(){
+            $(".section_title > img.LED_flecha").attr('src', 'media/img/flecha.png');
+        }
+    );
+
     
 
 });
