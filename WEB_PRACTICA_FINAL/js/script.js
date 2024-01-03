@@ -22,18 +22,6 @@ $(document).ready(function(){
         }
     );
     
-    // $( '.horizontal-scroll' ).horizontalScroll({
-    //     containerHeight: "300vh",
-    //     paddingLeft: "3em" ,
-        
-    //     function(){
-    //         $("div#gallery_community.horizontal-scroll").css(
-    //             'margin-top', '0px');
-    //     }
-    // });
-    
-     
-
 });
 
 let items = document.querySelectorAll('.carousel .carousel-item')
@@ -43,7 +31,6 @@ items.forEach((el) => {
     let next = el.nextElementSibling
     for (var i=1; i<minPerSlide; i++) {
         if (!next) {
-            // wrap carousel by using first child
         	next = items[0]
       	}
         let cloneChild = next.cloneNode(true)
