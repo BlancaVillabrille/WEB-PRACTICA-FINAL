@@ -281,7 +281,7 @@ div.text_img > img {
 
 h3.LED_rosa:hover {
     color: var(--color-rosa-hover);
-  text-shadow:
+    text-shadow:
     
     0 0 7px #F4F4ED,
     0 0 10px #F4F4ED,
@@ -525,16 +525,74 @@ div.section_title {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 1em 3em;
 }
 
 div.section_title > h1 {
     font-size: 6em;
     font-weight: bolder;
+    
+}
+
+div.section_title > h1.LED_rosa:hover {
+    color: var(--color-rosa-hover);
+    text-shadow:
+    
+    0 0 7px #F4F4ED,
+    0 0 10px #F4F4ED,
+    0 0 21px #F4F4ED,
+    
+    0 0 42px #F61067,
+    0 0 82px #F61067,
+    0 0 92px #F61067,
+    0 0 102px #F61067,
+    0 0 151px #F61067;
 }
 
 div.section_title img.LED_flecha {
     height: 6em;
 }
+
+div#gallery_community.horizontal-scroll {
+    margin-top: 300px;
+  
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+  
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+  
+  
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+  
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+
 
 
 /* /////////////////////////////////////////// */
