@@ -28,29 +28,28 @@ li{
 .build-a-xmas-2{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .first-imgs-merch{
     display: flex;
     flex-direction: row;
     object-fit: contain;
-    width: 55%;
-    height: 70vh;
+    width: 90vw;
 }
 .square-stars{
-    width: 36%;
+    width: 30vw;
+    height: 43vw;
     background-color: var(--color-rosa-hover);
     border-radius: 50px;
     overflow: hidden;
 }
 .star{
-    max-width: 100%;
-    max-height: 100%;
     position: relative;
     height: 29vh;
     overflow: hidden;
     left: 20px;
 }
-.stars-2{
+.stars{
     position: absolute;
     max-width: 100%;
     max-height: 100%;
@@ -58,13 +57,66 @@ li{
     right: 0;
     border-radius: 50px;
 }
+.star-1{
+    height: 22vw;
+    top: 16vw;
+    left: -2vw;
+    z-index: 3;
+}
+.star-2{
+    height: 37vw;
+    top: -28vw;
+    left: -6vw;}
+.stars-1{
+    height: 30vw;
+    top: 1vw;
+    z-index: 4;
+    right: 44vw;
+}
+.stars-2{
+    top: 20vw;
+    height: 23vw;
+    right: 40vw;
+    z-index: 5;
+}
+.stars-3{
+    height: 18vw;
+    top: 32vw;
+    right: 44vw;
+    transform: rotate(22deg);
+    z-index: 6;
+}
 .text-btn-eme-de-amores{
     display: flex;
     flex-direction: column;
+    margin-left: 23vw
 }
-
-
-
+.txt-eme{
+    display: flex;
+}
+.h4-eme{
+    font-size: 6vw;
+}
+.ver-colec{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 3em;
+}
+.btn-ver-coleccion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    height: 6vw;
+    width: 30vw;
+}
+.btn-ver-coleccion > p{
+    font-size: 3vw;
+    margin: 0;
+}
+.btn-ver-coleccion > img{
+    height: 3vw;
+}
 
 /* GALERIA */
 h3{
@@ -77,6 +129,7 @@ h3{
     gap: 4vw;
     margin-left: 3em;
     margin-top: 3em;
+    margin-bottom: 2vw;
 }
 .sec-merch>div:first-child > img{
     width: 6vw;
@@ -89,14 +142,20 @@ h3{
 }
 .album{
     padding-top: 4em;
+    display: flex;
+    padding-top: 4em;
+    justify-content: center;
+    flex-direction: column;
 }
 .col {
     display: flex;
+    gap: 5vw;
 }
 .container{
     display: flex;
     flex-direction: column;
-    margin-left: 8em;
+    margin-left: 6vw;
+    align-items: center;
 }
 .row-2{
     margin-top: 8em;
@@ -174,6 +233,11 @@ h3{
 }
 .h2-seleccion{
     font-size: 1.2em;
+}
+
+
+.modal-1{
+    display: none;
 }
 
 /* BOTONES COLOR */

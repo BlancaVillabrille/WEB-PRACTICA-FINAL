@@ -12,3 +12,22 @@
 
 //     }
 //   })
+
+
+
+
+
+
+
+
+var modal2 = document.getElementsByClassName('modal-2');
+
+// Get the button that opens the modal
+var btn2 = document.getElementsByClassName("btn-2");
+var modal1 = document.getElementsByClassName("modal-1")
+// When the user clicks the button, open the modal
+btn2.onclick = function() {
+    modal1.display = "none";
+    modal2.style.display = "block";
+
+}
