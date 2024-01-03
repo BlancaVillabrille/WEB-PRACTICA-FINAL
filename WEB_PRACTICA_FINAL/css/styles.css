@@ -281,7 +281,7 @@ div.text_img > img {
 
 h3.LED_rosa:hover {
     color: var(--color-rosa-hover);
-  text-shadow:
+    text-shadow:
     
     0 0 7px #F4F4ED,
     0 0 10px #F4F4ED,
@@ -361,7 +361,7 @@ div.container-center {
     min-height: 100vh;
 }
 
-div.row {
+div.container-center > div.row {
     margin: 0;
     width: 100%;
     display: flex;
@@ -369,7 +369,7 @@ div.row {
     justify-content: space-between;
 }
 
-div.column {
+div.container-center > div.row > div.column {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -525,16 +525,95 @@ div.section_title {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 1em 3em 3em;
 }
 
 div.section_title > h1 {
     font-size: 6em;
     font-weight: bolder;
+    
+}
+
+div.section_title > h1.LED_rosa:hover {
+    color: var(--color-rosa-hover);
+    text-shadow:
+    
+    0 0 7px #F4F4ED,
+    0 0 10px #F4F4ED,
+    0 0 21px #F4F4ED,
+    
+    0 0 42px #F61067,
+    0 0 82px #F61067,
+    0 0 92px #F61067,
+    0 0 102px #F61067,
+    0 0 151px #F61067;
 }
 
 div.section_title img.LED_flecha {
     height: 6em;
 }
+
+div#gallery_community.horizontal-scroll {
+    margin-top: 300px;
+  
+}
+
+
+  
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+  
+  
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+  
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+#community div.row {
+    width: 90%;
+}
+
+div.card {
+    border: none;
+    background-color: var(--color-blanco-fondo);
+}
+
+div.card-img {
+    display: flex;
+    justify-content: center;
+}
+
+div.card-img > img {
+    border-radius: 30px;
+    width: 95%;
+    height: auto;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
+    
+}
+
+/* @media (max-width: 767px) {
+    
+} */
+
 
 
 /* /////////////////////////////////////////// */
@@ -637,6 +716,14 @@ div.section_title img.LED_flecha {
 
     div.column img.starM.purple {
         right: 63%;
+    }
+
+    div.section_title > h1 {
+        font-size: 5em;
+    }
+    
+    div.section_title img.LED_flecha {
+        height: 5em;
     }
 }
 
@@ -803,6 +890,42 @@ div.section_title img.LED_flecha {
     #text {
         padding-bottom: 4em;
     }
+
+    div.section_title > h1 {
+        font-size: 4em;
+    }
+    
+    div.section_title img.LED_flecha {
+        height: 4em;
+    }
+
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+
+    #community div.row {
+        width: 100%;
+    }
+
+    .row>* {
+        width: 60%;
+    }
+
+    div.card-img > img {
+        width: 100%;
+    }
+
+    .carousel-control-next {
+        width: 45%; 
+    }
+
+    .carousel-control-prev {
+        width: 25%; 
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -850,6 +973,14 @@ div.section_title img.LED_flecha {
     div.column img.starS {
         margin: 12% 20%;
     }
+
+    div.section_title > h1 {
+        font-size:3em;
+    }
+    
+    div.section_title img.LED_flecha {
+        height: 3em;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -870,6 +1001,10 @@ div.section_title img.LED_flecha {
 
     div.column > button {
         margin-top: 125%;
+    }
+
+    .carousel-control-next {
+        width: 35%;
     }
 }
 
@@ -916,8 +1051,8 @@ div.section_title img.LED_flecha {
 
     #portada_home > div.row > div.col:last-child {
         position: absolute;
-        bottom: 12%;
-        padding-left: 55%;
+        bottom: 15%;
+        padding-left: 40%;
     }
 
     #portada_home img.starS,
@@ -987,6 +1122,18 @@ div.section_title img.LED_flecha {
 
     div.column img.starS {
         margin: 15% 25%;
+    }
+
+    div.section_title > h1 {
+        font-size: 2em;
+    }
+    
+    div.section_title img.LED_flecha {
+        height: 2em;
+    }
+
+    .row>* {
+        width: 70%;
     }
     
 }

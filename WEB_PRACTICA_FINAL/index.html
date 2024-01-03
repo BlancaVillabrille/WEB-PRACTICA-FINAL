@@ -191,18 +191,71 @@
                 <h1 class="LED_rosa">COMMUNITY</h1>
                 <img class="LED_flecha" src="media\img\flecha.png" alt="flecha">
             </div>
-            <div id="gallery_community">
-                <div class="gallery_item">
-                    <img src="media\img\community1.webp" alt="community1">
-                </div>
-                <div class="gallery_item">
-                    <img src="media\img\community2.jpg" alt="community2">
-                </div>
-                <div class="gallery_item">
-                    <img src="media\img\community3.jpg" alt="community3">
-                </div>
-                <div class="gallery_item">
-                    <img src="media\img\community4.jpg" alt="community4">
+            
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="media\img\community1.png" class="community1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="media\img\community2.png" class="community2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="media\img\community3.png" class="community3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="media\img\community4.png" class="community4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="media\img\community5.png" class="community5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="media\img\community6.png" class="community6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -214,7 +267,9 @@
 
     <script>AOS.init();</script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.6.1.min.js"></script>    
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery-horizontal-scroll.min.js"></script> 
+    <script src="js/jquery.mousewheel.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
