@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    AOS.init();
+
     $(".hamburger").click(function(){
         $(".toggle_menu").toggle();
     });
