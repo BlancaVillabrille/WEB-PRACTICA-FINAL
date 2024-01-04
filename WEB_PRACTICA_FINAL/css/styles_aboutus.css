@@ -18,13 +18,133 @@ body {
   background-color: #f4f4ed;
 }
 
+/* CÓDIGO DEL NAV >>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+nav {
+  height: 4em;
+  margin: 2em;
+  background-color: var(--color-blanco-fondo);
+  border: 2px solid #1c1a31;
+  border-radius: 50px;
+
+  display: block;
+  z-index: 999;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0 1em;
+}
+
+#logo {
+  float: left;
+  width: 30%;
+  align-content: flex-start;
+  margin-top: 0.4em;
+}
+
+#logo > img {
+  height: 5em;
+  position: absolute;
+  top: 1.5em;
+  left: 70px;
+}
+
+#menu > ul {
+  width: 70%;
+  height: 3em;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0em;
+  margin-top: 0.4em;
+}
+
+#menu > ul > li {
+  list-style: none;
+}
+
+#menu > ul > li > button {
+  height: 2em;
+  padding: 0 1em;
+  background-color: #f61067;
+  border: 2px solid #f61067;
+  border-radius: 50px;
+}
+
+#menu > ul > li > button > a {
+  color: var(--color-blanco-fondo);
+  text-decoration: none;
+}
+
+#menu > ul > li > button:hover {
+  background-color: var(--color-blanco-fondo);
+}
+
+#menu > ul > li > button:hover > a {
+  color: var(--color-rosa-hover);
+  font-weight: bold;
+}
+
+#menu > ul > li > a,
+#menu > ul > li > i {
+  color: var(--color-negro-texto);
+  text-decoration: none;
+}
+
+#menu > ul > li:last-child {
+  display: none;
+}
+
+.toggle_menu {
+  display: none;
+}
+
+.toggle_menu > ul {
+  margin: 1em 0;
+  width: 50%;
+  float: right;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle_menu > ul > li {
+  background-color: var(--color-blanco-fondo);
+  border: 2px solid #1c1a31;
+  border-radius: 50px;
+  list-style: none;
+
+  height: 3em;
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle_menu > ul > li > a {
+  text-decoration: none;
+  margin: 0 2em;
+  color: var(--color-negro-texto);
+}
+
+.toggle_menu > ul > li:hover > a,
+#menu > ul > li:hover > a {
+  font-weight: bold;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
 .sectionaboutus {
   display: flex;
   flex-direction: row;
   margin: 0vw 4vw 4vw;
 }
 
-.infoaboutus{
+.infoaboutus {
   width: 50%;
 }
 
@@ -33,7 +153,7 @@ body {
 }
 
 .aboutustitle p {
-  color:#1c1a31;
+  color: #1c1a31;
 }
 
 .aboutustitle h1 {
@@ -52,11 +172,10 @@ body {
   font-size: 1.2em;
 }
 
-.infoaboutus p{
+.infoaboutus p {
   color: #1c1a31;
   margin-right: 6vw;
 }
-
 
 .aboutustitle img,
 .ubicationtitle img {
@@ -71,7 +190,7 @@ body {
   width: 50%;
 }
 
-#churrourbanVideo{
+#churrourbanVideo {
   width: 100%;
   height: 100%; /* Cambia esta línea para que el video ocupe toda la altura */
   object-fit: cover;
@@ -369,7 +488,6 @@ a {
   border-radius: 25px;
 }
 
-
 /* seccion footer */
 
 .footer {
@@ -433,7 +551,8 @@ a {
   transition: color 0.3s ease;
 }
 
-.footer-section h5,p {
+.footer-section h5,
+p {
   color: #f4f4ed;
 }
 
@@ -470,7 +589,6 @@ a {
   margin-bottom: 0.3em;
   font-size: 3.2vw;
 }
-
 
 .newsletter_wrapper p {
   color: #f4f4ed;
@@ -521,8 +639,6 @@ a {
   color: black;
   border-color: #f4f4ed;
 }
-
-
 
 /* media queries tablet*/
 
@@ -607,6 +723,12 @@ a {
 /* media queries movil */
 
 @media only screen and (max-width: 600px) {
+  .aboutustitle h2 {
+    font-size: 5vw;
+    margin-bottom: 0.7em;
+    margin-top: 1em;
+  }
+
   .aboutustitle p {
     font-size: 4vw;
   }
@@ -618,7 +740,7 @@ a {
 
   .infoaboutus {
     width: 100%;
-  } 
+  }
 
   .churrourban {
     display: flex;
@@ -681,29 +803,18 @@ a {
   .videoaboutus {
     height: 150px; /* Ajusta la altura según tus necesidades */
     overflow: hidden;
-}
+  }
 
-.churrourbanVideo {
+  .churrourbanVideo {
     width: 50%;
     height: 100%; /* Ajusta la altura al 100% para que el video ocupe toda la altura del contenedor */
     object-fit: cover;
-}
+  }
 
   .botonparallax button {
     width: 80%;
     border-radius: 2em;
     font-size: 1em; /* Ajusta el tamaño del texto dentro del botón según sea necesario */
-  }
-
-  .newsletter_wrapper h2 {
-    font-size: 7vw;
-    margin-bottom: 0em;
-  }
-
-  .newsletter_wrapper p {
-    padding: 1.3em;
-    font-size: 4vw;
-    line-height: 5vw;
   }
 
   .google-maps div iframe {
@@ -723,6 +834,10 @@ a {
     padding: 0vw 8vw 8vw 8vw;
   }
 
+  .reviews {
+    margin-bottom: 6em;
+  }
+
   .google-maps {
     display: flex;
     flex-direction: column;
@@ -730,62 +845,13 @@ a {
     padding-top: 8vw;
   }
 
-  .input-field {
-    width: 73vw;
-    margin: 0em;
-    margin-bottom: 0.8em;
-  }
-
-  .input-field input {
-    margin: 0px 0px 0px 5vw;
-  }
-
-  .newsletter_wrapper p {
-    font-size: 3.5vw;
-    line-height: 6vw;
-  }
-
-  .input-field input {
-    font-size: 3.6vw;
-  }
-
-  .newsletter_wrapper {
-    height: 100%;
-    margin-bottom: 5em;
-    margin-top: 5em;
-  }
-
-  .enviar button {
-    height: 3em;
-    width: 7.5em;
-  }
-
-  .infofooter p {
-    font-size: 1.6vw;
-  }
-
-  .aboutustitle h2 {
-    font-size: 5vw;
-    margin-bottom: 0.7em;
-    margin-top: 1em;
-  }
-
-  .reviews {
-    margin-bottom: 6em;
-  }
+  /* footer media queries */
 
   .redesaboutus {
     margin: 0;
     height: 100%;
   }
 
-  .infofooter {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #f61067;
-    margin-bottom: 3em;
-  }
 
   .redes {
     margin-bottom: 0.5em;
@@ -797,9 +863,16 @@ a {
     margin: 7vw;
   }
 
-  .footer-section p {
-    font-size: 0.7em;
-    margin-bottom: 1.1em;
+  .infofooter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f61067;
+    margin-bottom: 3em;
+  }
+
+  .infofooter p {
+    font-size: 1.6vw;
   }
 
   .footer-section {
@@ -810,6 +883,68 @@ a {
     font-size: 4.5vw;
     margin-bottom: 1.2em;
   }
+
+  .footer-section p {
+    font-size: 0.7em;
+    margin-bottom: 1.1em;
+  }
+
+  .newsletter_wrapper {
+    height: 100%;
+    margin-bottom: 5em;
+    margin-top: 5em;
+  }
+
+  .newsletter_wrapper h2 {
+    font-size: 7vw;
+    margin-bottom: 0em;
+  }
+
+  .newsletter_wrapper p {
+    padding: 1.3em;
+    font-size: 3.5vw;
+    line-height: 5vw;
+  }
+
+  .input-field {
+    width: 73vw;
+    margin: 0em;
+    margin-bottom: 0.8em;
+  }
+
+  .input-field input {
+    font-size: 3.6vw;
+    margin: 0px 0px 0px 5vw;
+  }
+
+  .enviar button {
+    height: 3em;
+    width: 7.5em;
+  }
+
 }
 
+
+
 /* media queries menu movil */
+@media screen and (max-width: 700px) {
+  #menu > ul > li:last-child {
+    display: block;
+  }
+
+  #menu > ul > li:not(:last-child) {
+    display: none;
+  }
+
+  #menu > ul {
+    height: auto;
+    padding: 1em;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 0em;
+  }
+
+  #menu > ul > li {
+    margin: 0.2em 0;
+  }
+}

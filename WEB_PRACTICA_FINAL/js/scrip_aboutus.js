@@ -1,18 +1,22 @@
-function playVideo() {
-  document.getElementById('churrourbanVideo').style.display = 'block';
-  document.getElementById('churrourbanVideo').play();
-}
+// menu js
 
-function pauseVideo() {
-  document.getElementById('churrourbanVideo').style.display = 'none';
-  document.getElementById('churrourbanVideo').pause();
-}
+$(document).ready(function(){
 
-
-
-
-
-
+  $(".hamburger").click(function(){
+  $(".toggle_menu").toggle();
+  });
+  
+  $("#logo").hover(
+  function(){
+  $("#logo > img").attr('src', 'media/img/logo horizontal-LED.png');
+  },
+  function(){
+  $("#logo > img").attr('src', 'media/img/Logo Horizontal.png');
+  }
+  );
+  
+  
+  });
 
 
 
@@ -47,4 +51,3 @@ $(document).ready(function(){
       
     });
 
-    
