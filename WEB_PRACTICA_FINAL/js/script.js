@@ -1,15 +1,17 @@
 $(document).ready(function(){
 
+    AOS.init();
+
     $(".hamburger").click(function(){
         $(".toggle_menu").toggle();
     });
 
     $("#logo").hover(
         function(){
-            $("#logo > img").attr('src', 'media/img/logo horizontal-LED.png');
+            $("#logo > a > img").attr('src', 'media/img/logo horizontal-LED.png');
         },
         function(){
-            $("#logo > img").attr('src', 'media/img/Logo Horizontal.png');
+            $("#logo > a > img").attr('src', 'media/img/Logo Horizontal.png');
         }
     );
 
