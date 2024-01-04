@@ -649,7 +649,6 @@ a {
 /* media queries tablet*/
 
 @media only screen and (max-width: 1150px) {
-
   .infoaboutus p {
     color: #1c1a31;
     margin: 2vw 6vw;
@@ -903,7 +902,7 @@ a {
   }
 
   .footer-section p {
-    font-size: 0.7em;
+    font-size: 0.9em;
     margin-bottom: 1.1em;
   }
 
@@ -967,12 +966,12 @@ a {
 /* aos */
 @keyframes fadeUp {
   from {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
