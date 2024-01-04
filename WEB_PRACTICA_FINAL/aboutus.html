@@ -28,8 +28,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="styles.css"> <!-- Agrega tu archivo de estilos aquí -->
-    <!-- JS DE ABOUT US -->
-    <script src="js/script_aboutus.js"></script>
 </head>
 
 <body>
@@ -37,7 +35,7 @@
         <nav>
             <div id="menu">
                 <div id="logo">
-                    <img src="media\img\Logo Horizontal.png" alt="logo">
+                    <img src="media/img/Logo Horizontal.png" alt="logo">
                 </div>
                 <ul>
                     <li>
@@ -76,7 +74,6 @@
                     </li>
                 </ul>
             </div>
-            
         </nav>
     </header>
 
@@ -249,65 +246,13 @@
         </div>
     </footer>
     
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/AOS.js"></script>
-        <script>
-            $(".carousel").owlCarousel({
-                loop: true,
-                margin: 25,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                autoplayHoverPause: true,
-                nav: true,
-                dots: true,
-                navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    600: {
-                        items: 2,
-                    },
-                    1000: {
-                        items: 3,
-                    },
-                }
-            });
-        </script>
-    
-        <script src="js/bootstrap.min.js"></script>
-        <script>AOS.init();</script>
-        <script>
-            function validarCorreo() {
-                var emailInput = document.getElementById('emailInput');
-                if (emailInput.checkValidity()) {
-                    alert('¡Gracias por suscribirte!');
-                } else {
-                    if (emailInput.validity.typeMismatch) {
-                        emailInput.setCustomValidity('Por favor, ingresa una dirección de correo electrónico válida.');
-                    } else {
-                        emailInput.setCustomValidity('Este campo es obligatorio.');
-                    }
-                    emailInput.reportValidity();
-                }
-            }
-        </script>
-
-<script>
-    function playVideo() {
-        document.getElementById('churrourbanVideo').style.display = 'block';
-        document.getElementById('churrourbanImage').style.display = 'none';
-        document.getElementById('churrourbanVideo').play();
-    }
-
-    function pauseVideo() {
-        document.getElementById('churrourbanVideo').style.display = 'none';
-        document.getElementById('churrourbanImage').style.display = 'block';
-        document.getElementById('churrourbanVideo').pause();
-    }
-</script>
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/AOS.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- JS DE ABOUT US -->
+    <script src="js/script_aboutus.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
