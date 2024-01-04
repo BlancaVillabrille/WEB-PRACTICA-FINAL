@@ -14,12 +14,25 @@
   --color-verde-links: #00f0b5;
 }
 main{
-    margin-top: 6vw;
+  padding-top: 6vw;
+  background-color: var(--color-blanco-fondo);
 }
 li {
   list-style: none;
 }
 
+header {
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-blanco-fondo);
+}
+
+header > p {
+  max-width: 600px;
+  margin: auto;
+}
 /* CÓDIGO DEL NAV >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 nav {
@@ -178,7 +191,18 @@ nav {
 
 
 /* PRIMERA SECCION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
+.LED_rosa:hover {
+  color: var(--color-rosa-hover);
+  text-shadow:
+  0 0 7px #F4F4ED,
+  0 0 10px #F4F4ED,
+  0 0 21px #F4F4ED,
+  0 0 42px #F61067,
+  0 0 82px #F61067,
+  0 0 92px #F61067,
+  0 0 102px #F61067,
+  0 0 151px #F61067;
+}
 .build-a-xmas {
   display: flex;
   flex-direction: column;
@@ -199,7 +223,7 @@ nav {
   width: 30vw;
   height: 43vw;
   background-color: var(--color-rosa-hover);
-  border-radius: 50px;
+  border-radius: 5vw;
   overflow: hidden;
 }
 .star {
@@ -210,11 +234,9 @@ nav {
 }
 .stars {
   position: absolute;
-  max-width: 100%;
-  max-height: 100%;
   height: 40vh;
   right: 0;
-  border-radius: 50px;
+  border-radius: 4vw;
 }
 .star-1 {
   height: 22vw;
@@ -229,25 +251,26 @@ nav {
 }
 .stars-1 {
   height: 30vw;
-  top: 9vw;
+  top: -7vw;
   z-index: 4;
-  right: 44vw;
+  right: -18vw;
 }
 .stars-2 {
-  top: 30vw;
+  top: 13vw;
   height: 23vw;
-  right: 40vw;
+  right: -23vw;
   z-index: 5;
 }
 .stars-3 {
   height: 18vw;
-  top: 42vw;
-  right: 44vw;
+  top: 26vw;
+  right: -18vw;
   transform: rotate(22deg);
   z-index: 6;
 }
 .eme{
-    display: flex;
+  display: flex;
+  position: relative;
 }
 .text-btn-eme-de-amores {
   display: flex;
