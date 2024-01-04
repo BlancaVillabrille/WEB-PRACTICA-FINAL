@@ -245,6 +245,7 @@ h1:hover {
   border-style: none;
   border-radius: 30px;
   font-size: 1.6rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .btn-outline-secondary:hover {
