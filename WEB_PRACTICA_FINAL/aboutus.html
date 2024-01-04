@@ -13,6 +13,8 @@
     <!-- Enlaces a CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <link rel="stylesheet" href="css/styles_aboutus.css" />
     <!-- Enlaces a JS AOS -->
     <script src="js/aos.js"></script>
@@ -83,8 +85,8 @@
         <div class="aboutustitle">
             <h1 id="quienes-somos"> ABOUT US<img src="media/iconos/flecha.png" alt=""></h1>     
         </div>
-        <div class="sectionaboutus">
 
+        <div class="sectionaboutus">
           <div class="infoaboutus">
                 <p><b>Build-a-Fit</b> es un negocio de moda personalizable.<br><br>Ofrecemos diferentes modelos
                     base de prendas de ropa que podrán ser diseñados por cada cliente, de modo que la experiencia
@@ -95,13 +97,10 @@
                 <img class="churrourbanImage" src="media/img/Churrourban.png" alt="">
              </div>
           </div>
-           
-          </div>
-     </div>
+        </div>
+  
 
-      
-
-        <!-- Imagen fija -->
+        <!-- Imagen fija parallax -->
             <div class="imagen_fondo">
                 <div class="botonparallax">
                     <a href="https://buildafitblog.cargo.site/" class="btn btn-outline-secondary btn-lg">
@@ -109,13 +108,12 @@
                     </a>
                 </div>
             </div>
-        </section>
-
-       
+  
 
         <!-- Reviews -->
         <section class="reviews">
             <div class="aboutustitle">
+                <div class="aos" data-aos="fade-up"></div>
                 <div>
                     <h1>REVIEWS<img src="media/iconos/flecha.png" alt=""></h1>
                     <h2><b>Reseñas de nuestros clientes</b></h2>
@@ -169,8 +167,8 @@
             </div>    
         </section>
 
+        <!-- google maps -->
         <section>
- 
             <div class="aboutustitle">
                 <div>
                     <h1>UBICACIÓN<img src="media/iconos/flecha.png" alt=""></h1>

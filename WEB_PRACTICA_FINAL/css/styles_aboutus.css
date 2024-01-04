@@ -175,6 +175,7 @@ nav {
 .infoaboutus p {
   color: #1c1a31;
   margin: 2vw 6vw;
+  font-size: 1.4em;
 }
 
 .aboutustitle img,
@@ -648,10 +649,11 @@ a {
 /* media queries tablet*/
 
 @media only screen and (max-width: 1150px) {
-  .botonparallax button {
-    width: 70%;
-    border-radius: 2em;
-    font-size: 1.4em;
+
+  .infoaboutus p {
+    color: #1c1a31;
+    margin: 2vw 6vw;
+    font-size: 1.1em;
   }
 
   .infoubication p,
@@ -659,6 +661,12 @@ a {
     margin-bottom: 0;
     font-size: 1.7vw;
     color: var(--color-blanco-fondo);
+  }
+
+  .botonparallax button {
+    width: 70%;
+    border-radius: 2em;
+    font-size: 1.4em;
   }
 
   .reviews h2 {
@@ -954,4 +962,21 @@ a {
   #menu > ul > li {
     margin: 0.2em 0;
   }
+}
+
+/* aos */
+@keyframes fadeUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 1s ease-out;
+  opacity: 0; /* Para asegurar que esté oculto inicialmente */
 }
