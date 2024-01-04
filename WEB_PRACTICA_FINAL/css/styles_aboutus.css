@@ -24,7 +24,7 @@ nav {
   height: 4em;
   margin: 2em;
   background-color: var(--color-blanco-fondo);
-  border: 2px solid #1c1a31;
+  border: 2px solid #1c1a31; 
   border-radius: 50px;
 
   display: block;
@@ -145,7 +145,14 @@ nav {
 }
 
 .infoaboutus {
-  width: 50%;
+  width: 60%;
+}
+
+.infofooter p{
+    color: #f4f4ed;
+}
+.infofooter a{
+  color: #f4f4ed;
 }
 
 .aboutustitle {
@@ -164,7 +171,7 @@ nav {
   display: inline-block;
   vertical-align: baseline;
   margin: 0;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.4em;
 }
 
 .aboutustitle p {
@@ -174,7 +181,7 @@ nav {
 
 .infoaboutus p {
   color: #1c1a31;
-  margin-right: 6vw;
+  margin: 2vw 6vw;
 }
 
 .aboutustitle img,
@@ -187,7 +194,7 @@ nav {
 .churrourban {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
 }
 
 #churrourbanVideo {
@@ -434,7 +441,7 @@ h1:hover {
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: nowrap;
-  padding: 4vw 4vw 4vw 0vw;
+  padding: 4vw 4vw 4.5vw 0vw;
   background-color: #5e239d;
   width: 30%;
 }
@@ -544,6 +551,7 @@ a {
 
 .footer-section h5 {
   font-size: 1.2vw;
+  color:#f4f4ed;
 }
 
 .footer-section h5:hover {
@@ -551,10 +559,6 @@ a {
   transition: color 0.3s ease;
 }
 
-.footer-section h5,
-p {
-  color: #f4f4ed;
-}
 
 .footer-section p:hover {
   color: #1c1a31;
@@ -748,7 +752,13 @@ p {
     width: 100%;
     margin-bottom: 2em;
   }
+  
+  .videoaboutus{
+    width: 50%;
+  }
+ 
 
+/* imagen fija */
   .imagen_fondo {
     margin-bottom: 5em;
   }
@@ -845,7 +855,7 @@ p {
     padding-top: 8vw;
   }
 
-  /* footer media queries */
+  /* footer media queries movil*/
 
   .redesaboutus {
     margin: 0;
