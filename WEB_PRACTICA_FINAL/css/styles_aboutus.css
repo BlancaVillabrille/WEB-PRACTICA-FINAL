@@ -260,7 +260,7 @@ h1:hover {
   filter: drop-shadow(0 0 5px #f61067) drop-shadow(0 0 10px #f61067)
   drop-shadow(0 0 15px #f61067) drop-shadow(0 0 20px #f61067)
   drop-shadow(
-    0 0 10px rgba(255, 255, 255, 0.8)
+    0 0 5px rgba(255, 255, 255, 0.8)
       /* Trazado difuminado blanco más pronunciado */
   );
   
@@ -290,6 +290,7 @@ h1:hover {
 .wrapper {
   width: 100%;
   display: flex;
+  margin-top: 4em;
 }
 
 .owl-carousel .owl-item img {

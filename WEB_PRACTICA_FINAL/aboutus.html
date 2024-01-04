@@ -26,7 +26,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-   
+    <!-- Enlace a JS -->
+    <script src="WEB_PRACTICA_FINAL/js/script_aboutus.js"></script>
 </head>
 
 <body>
@@ -43,10 +44,10 @@
                         </button>
                     </li>
                     <li>
-                        <a href="#">¿Dónde estamos?</a>
+                        <a href="#ubication">¿Dónde estamos?</a>
                     </li>
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="aboutus.html">About Us</a>
                     </li>
                     <li>
                         <a href="https://buildafitblog.cargo.site/">Blog</a>
@@ -168,13 +169,12 @@
         </section>
 
         <!-- google maps -->
-        <section>
+        <section id="ubication">
             <div class="aboutustitle"> 
                 <div>
                     <h1>UBICACIÓN<img src="media/iconos/flecha.png" alt=""></h1>
                 </div>
             </div>
-
             <div class="sectionubication">
               <div class="google-maps">
                 <!-- AOS Google maps -->
@@ -184,7 +184,6 @@
                    </div> 
                 </div>    
               </div>
-
               <div class="infoubication">
                  <p>Parada de metro cuzco o línea de autobús 147.</p>
                  <em><b><a href="https://maps.app.goo.gl/6zztJCqKHghCVrQ96"style="text-decoration:none"target=_blank>Prta del Sol, 1, Centro, 28013 Madrid.</a></b></em>
@@ -210,9 +209,9 @@
                     <div class="footer-section">
                         <h5><b>Build-a-Fit</b></h5>
                         <p><a href="#quienes-somos">Quiénes somos</a></p>
-                        <p><a href="WEB_PRACTICA_FINAL/index.html/">Home</a></p>
-                        <p><a href="WEB_PRACTICA_FINAL/merch.html/">Merchandising</a></p>
-                        <p><a href="WEB_PRACTICA_FINAL/reservas.html/">Reservas</a></p>
+                        <p><a href="index.html">Home</a></p>
+                        <p><a href="merch.html">Merchandising</a></p>
+                        <p>>Reservas</p>
                         <p><a href="https://buildafitblog.cargo.site/">Blog</a></p>
                     </div>
                     <div class="footer-section">
@@ -252,42 +251,41 @@
               
         </div>
     </footer>
-    
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-    
-        <script>
-            $(".carousel").owlCarousel({
-                loop: true,
-                margin: 25,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                autoplayHoverPause: true,
-                nav: true,
-                dots: true,
-                navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    600: {
-                        items: 2,
-                    },
-                    1000: {
-                        items: 3,
-                    },
-                }
-            });
-        </script>
-    
-        <script src="js/bootstrap.min.js"></script>
-        <script>AOS.init();</script>
-        <script>
-            function validarCorreo() {
-                var emailInput = document.getElementById('emailInput');
-                if (emailInput.checkValidity()) {
-                    alert('¡Gracias por suscribirte!');
+    <script>
+        $(".carousel").owlCarousel({
+            loop: true,
+            margin: 25,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            nav: true,
+            dots: true,
+            navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,
+                },
+                1000: {
+                    items: 3,
+                },
+            }
+        });
+
+
+        
+    </script>
+    <script>AOS.init();</script>
+    <script>
+        function validarCorreo() {
+            var emailInput = document.getElementById('emailInput');
+            if (emailInput.checkValidity()) {
+                alert('¡Gracias por suscribirte!');
+            } else {
+                if (emailInput.validity.typeMismatch) {
+                    emailInput.setCustomValidity('Por favor, ingresa una dirección de correo electrónico válida.');
                 } else {
                     if (emailInput.validity.typeMismatch) {
                         emailInput.setCustomValidity('Por favor, ingresa una dirección de correo electrónico válida.');
@@ -295,13 +293,17 @@
                         emailInput.setCustomValidity('Este campo es obligatorio.');
                     }
                     emailInput.reportValidity();
+                    emailInput.setCustomValidity('Este campo es obligatorio.');
                 }
+                emailInput.reportValidity();
             }
+        }
         </script>
-
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>    
+    <script src="js/script_aboutus.js"></script>
+
+    
     
 </body>
 </html>
