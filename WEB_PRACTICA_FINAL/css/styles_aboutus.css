@@ -24,7 +24,7 @@ nav {
   height: 4em;
   margin: 2em;
   background-color: var(--color-blanco-fondo);
-  border: 2px solid var(--color-negro-texto); 
+  border: 2px solid var(--color-negro-texto);
   border-radius: 50px;
 
   display: block;
@@ -70,7 +70,7 @@ nav {
 #menu > ul > li > button {
   height: 2em;
   padding: 0 1em;
-  background-color: #f61067; 
+  background-color: #f61067;
   border: 2px solid #f61067;
   border-radius: 50px;
 }
@@ -147,7 +147,6 @@ nav {
 .infoaboutus {
   width: 60%;
 }
-
 
 .aboutustitle {
   margin: 0vw 4vw;
@@ -498,14 +497,13 @@ a {
   background-color: var(--color-rosa-hover);
 }
 
-.infofooter p{
+.infofooter p {
   color: var(--color-blanco-fondo);
 }
 
-.infofooter a{
-color: var(--color-blanco-fondo);
+.infofooter a {
+  color: var(--color-blanco-fondo);
 }
-
 
 .redesaboutus {
   height: 40vw;
@@ -555,7 +553,7 @@ color: var(--color-blanco-fondo);
 
 .footer-section h5 {
   font-size: 1.2vw;
-  color:var(--color-blanco-fondo);
+  color: var(--color-blanco-fondo);
 }
 
 .footer-section h5:hover {
@@ -563,9 +561,8 @@ color: var(--color-blanco-fondo);
   transition: color 0.3s ease;
 }
 
-
 .footer-section p:hover {
-  color:var(--color-negro-texto);
+  color: var(--color-negro-texto);
   transition: color 0.3s ease;
 }
 
@@ -633,7 +630,7 @@ color: var(--color-blanco-fondo);
   width: 8.7em;
   height: 3em;
   border-style: solid;
-  background-color: #f4f4ed;
+  background-color: var(--color-blanco-fondo);
   border-radius: 25px;
   color: var(--color-rosa-hover);
   border-color: var(--color-rosa-hover);
@@ -641,11 +638,11 @@ color: var(--color-blanco-fondo);
 }
 
 .enviar button:hover {
-  background-color: #00f0b5;
+  background-color: var(--color-verde-links);
   border-style: solid;
   border-width: 3px;
   color: black;
-  border-color: #f4f4ed;
+  border-color: var(--color-blanco-fondo);
 }
 
 /* media queries tablet*/
@@ -661,7 +658,7 @@ color: var(--color-blanco-fondo);
   a {
     margin-bottom: 0;
     font-size: 1.7vw;
-    color: #f4f4ed;
+    color: var(--color-blanco-fondo);
   }
 
   .reviews h2 {
@@ -756,25 +753,25 @@ color: var(--color-blanco-fondo);
     width: 100%;
     margin-bottom: 2em;
   }
-  
-  .videoaboutus{
+
+  .videoaboutus {
     width: 50%;
   }
- 
 
-/* imagen fija */
+  /* imagen fija */
   .imagen_fondo {
     margin-bottom: 5em;
   }
 
   .btn-outline-secondary {
-    background-color: #f61067;
-    color: #f4f4ed;
+    background-color: var(--color-rosa-hover);
+    color: var(--color-blanco-fondo);
     border-style: none;
     border-radius: 30px;
     margin: 1em;
     font-size: 5.5vw;
   }
+
   .fa-solid,
   .fas {
     width: 80%;
@@ -866,7 +863,6 @@ color: var(--color-blanco-fondo);
     height: 100%;
   }
 
-
   .redes {
     margin-bottom: 0.5em;
     font-size: 12vw;
@@ -881,7 +877,7 @@ color: var(--color-blanco-fondo);
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #f61067;
+    background-color: var(--color-rosa-hover);
     margin-bottom: 3em;
   }
 
@@ -935,10 +931,7 @@ color: var(--color-blanco-fondo);
     height: 3em;
     width: 7.5em;
   }
-
 }
-
-
 
 /* media queries menu movil */
 @media screen and (max-width: 700px) {
