@@ -14,7 +14,7 @@
   --color-verde-links: #00f0b5;
 }
 main{
-  padding-top: 6vw;
+  padding-top: 1vw;
   background-color: var(--color-blanco-fondo);
 }
 li {
@@ -206,7 +206,7 @@ nav {
 .build-a-xmas {
   display: flex;
   flex-direction: column;
-  padding: 4em;
+  padding: 7vw;
 }
 .build-a-xmas-2 {
   display: flex;
@@ -282,19 +282,39 @@ nav {
 }
 .h4-eme {
   font-size: 6vw;
+  font-weight: 900;
 }
 .ver-colec {
   display: flex;
   flex-direction: row-reverse;
-  padding-top: 3em;
+  padding-top: 4vw;
 }
 .btn-ver-coleccion {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1em;
   height: 6vw;
   width: 30vw;
+  background-color: var(--color-rosa-hover);
+  color: var(--color-blanco-fondo);
+  border-style: none;
+  border-radius: 30px;
+  font-size: 1.6rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  justify-content: space-around;
+}
+.btn-ver-coleccion:hover{
+  background-color: var(--color-blanco-fondo);
+  color: var(--color-rosa-hover);
+  border-style: solid;
+  border-color: var(--color-rosa-hover);
+  border-width: 2px;
+  filter: drop-shadow(0 0 5px var(--color-rosa-hover)) drop-shadow(0 0 10px var(--color-rosa-hover))
+  drop-shadow(0 0 15px var(--color-rosa-hover)) drop-shadow(0 0 20px var(--color-rosa-hover))
+  drop-shadow(
+    0 0 10px rgba(255, 255, 255, 0.8)
+      /* Trazado difuminado blanco más pronunciado */
+  );
 }
 .btn-ver-coleccion > p {
   font-size: 3vw;
@@ -302,7 +322,83 @@ nav {
 }
 .btn-ver-coleccion > img {
   height: 3vw;
+  color: var(--color-rosa-hover);
 }
+
+
+/* MEDIA QUERIES PRIMERA SECCION  */
+
+@media only screen and (max-width: 600px) {
+  .build-a-xmas-2 {
+    flex-direction: column;
+  }
+  .first-imgs-merch {
+    padding-left: 1.2vw;
+    right: 2vw;
+    justify-content: flex-start;
+  } 
+  .square-stars {
+    width: 46vw;
+    height: 68vw;
+  }
+  .star-1 {
+    height: 35vw;
+    top: 24vw;
+  }
+  .star-2 {
+    height: 59vw;
+    top: -46vw;
+    left: -11vw;
+  }
+  .stars-1 {
+    height: 47vw;
+    right: -34vw;
+    top: -9vw;
+  }
+  .stars-2 {
+    top: 27vw;
+    height: 31vw;
+    right: -39vw;
+  }
+  .stars-3 {
+    height: 25vw;
+    top: 44vw;
+    right: -29vw;
+  }
+
+  .text-btn-eme-de-amores {
+    padding-top: 7vw;
+    margin-left: 0;
+  }
+  .h4-eme {
+    font-size: 9vw;
+  }
+  .ver-colec {
+    flex-direction: row;
+  }
+  .btn-ver-coleccion {
+    height: 14vw;
+    width: 57vw;
+  }
+  .btn-ver-coleccion > p {
+    font-size: 5vw;
+  }
+  .btn-ver-coleccion > img {
+      height: 4vw;
+      color: var(--color-rosa-hover);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* GALERIA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 h3 {
@@ -310,7 +406,7 @@ h3 {
   font-weight: 800;
 }
 .sec-merch{
-    margin-bottom: 4em;
+  padding-bottom: 4em;
 }
 .sec-merch > div:first-child {
   display: flex;
@@ -497,7 +593,7 @@ h3 {
   --bs-btn-border-color: none;
 }
 .btn-secondary {
-  border-radius: 30px;
+  border-radius: 9vw;
   --bs-btn-bg: var(--color-rosa-hover);
   --bs-btn-border-color: none;
 }

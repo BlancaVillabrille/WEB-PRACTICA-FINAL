@@ -21,9 +21,9 @@ $(document).ready(function(){
 
     $(".hamburger").click(function(){
         $(".toggle_menu").toggle();
-        });
+    });
         
-        $("#logo").hover(
+    $("#logo").hover(
         function(){
         $("#logo > img").attr('src', 'media/img/logo horizontal-LED.png');
         },
@@ -38,6 +38,16 @@ $(document).ready(function(){
         },
         function(){
             $(".section_title > img").attr('src', 'media/img/flecha.png');
+        }
+    );
+
+
+    $(".btn-ver-coleccion").hover(
+        function(){
+        $(".btn-ver-coleccion > img").attr('src', 'media/img/flecharosa.svg');
+        },
+        function(){
+        $(".btn-ver-coleccion > img").attr('src', 'media/img/flecha.svg');
         }
     );
 });
