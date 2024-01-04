@@ -1,3 +1,23 @@
+function playVideo() {
+  document.getElementById('churrourbanVideo').style.display = 'block';
+  document.getElementById('churrourbanVideo').play();
+}
+
+function pauseVideo() {
+  document.getElementById('churrourbanVideo').style.display = 'none';
+  document.getElementById('churrourbanVideo').pause();
+}
+
+
+
+
+
+
+
+
+
+
+// reviews scroll horizontal
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
@@ -16,6 +36,7 @@ $(document).ready(function(){
   });
 
 
+// efecto flecha brillante hover
 
     $(".section_title").hover(
       function(){
@@ -25,3 +46,5 @@ $(document).ready(function(){
       $(".section_title > img.LED_flecha").attr('src', 'media/img/flecha_LED.png');
       
     });
+
+    

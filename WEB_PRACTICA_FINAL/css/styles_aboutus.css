@@ -21,15 +21,19 @@ body {
 .sectionaboutus {
   display: flex;
   flex-direction: row;
-  margin-bottom: 4em;
+  margin: 0vw 4vw 4vw;
+}
+
+.infoaboutus{
+  width: 50%;
 }
 
 .aboutustitle {
-  margin: 2.2vw 4vw;
+  margin: 0vw 4vw;
 }
 
 .aboutustitle p {
-  color: #000000;
+  color:#1c1a31;
 }
 
 .aboutustitle h1 {
@@ -48,6 +52,12 @@ body {
   font-size: 1.2em;
 }
 
+.infoaboutus p{
+  color: #1c1a31;
+  margin-right: 6vw;
+}
+
+
 .aboutustitle img,
 .ubicationtitle img {
   width: 10vw;
@@ -58,7 +68,13 @@ body {
 .churrourban {
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  width: 50%;
+}
+
+#churrourbanVideo{
+  width: 100%;
+  height: 100%; /* Cambia esta línea para que el video ocupe toda la altura */
+  object-fit: cover;
 }
 
 .imagen_fondo {
@@ -82,7 +98,7 @@ h1:hover {
   margin-bottom: 1.2em;
   display: flex;
   justify-content: center;
-  margin-bottom: 0em;
+  margin-bottom: 1.5em;
   font-size: 1.7vw;
 }
 
@@ -353,11 +369,77 @@ a {
   border-radius: 25px;
 }
 
+
 /* seccion footer */
 
 .footer {
   display: flex;
   flex-direction: row;
+  background-color: #f61067;
+}
+
+.redesaboutus {
+  height: 40vw;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #f61067;
+  padding-left: 4em;
+}
+
+.redes {
+  width: 100%;
+  margin-bottom: 6vw;
+}
+
+.redes i {
+  color: #f4f4ed;
+  margin-right: 6.7vw;
+  width: 4vw;
+  font-size: 4vw;
+}
+
+.redes i:hover {
+  color: #1c1a31;
+  transition: color 0.3s ease;
+}
+
+.infofooter {
+  display: flex;
+  flex-direction: row;
+}
+
+.infofooter p {
+  margin-bottom: 0.4em;
+  font-size: 1vw;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 3vw;
+}
+
+.footer-section h5 {
+  font-size: 1.2vw;
+}
+
+.footer-section h5:hover {
+  color: #1c1a31;
+  transition: color 0.3s ease;
+}
+
+.footer-section h5,p {
+  color: #f4f4ed;
+}
+
+.footer-section p:hover {
+  color: #1c1a31;
+  transition: color 0.3s ease;
 }
 
 .footer-section a {
@@ -389,16 +471,6 @@ a {
   font-size: 3.2vw;
 }
 
-.newsletter_wrapper h1::before {
-  content: "";
-  position: absolute;
-  background: #dddddd;
-  width: 90px;
-  height: 1px;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 .newsletter_wrapper p {
   color: #f4f4ed;
@@ -426,19 +498,6 @@ a {
   background-color: transparent;
 }
 
-.redes i {
-  color: #f4f4ed;
-  margin-right: 6.7vw;
-  width: 4vw;
-  font-size: 4vw;
-}
-
-.error-message {
-  color: red;
-  font-size: 14px;
-  margin-top: 5px;
-}
-
 .input input:focus {
   outline: none; /* Quitar el contorno predeterminado */
   border: none; /* Quitar el borde predeterminado */
@@ -463,95 +522,7 @@ a {
   border-color: #f4f4ed;
 }
 
-.newsletter_wrapper form button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  background: #ffffff;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 0 20px;
-  border-left: 1px solid #ffffff;
-  cursor: pointer;
-  transition: 0.3s;
-}
 
-.footer {
-  background-color: #f61067;
-}
-
-.redesaboutus {
-  height: 40vw;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-color: #f61067;
-  padding-left: 4em;
-}
-
-.redes {
-  width: 100%;
-  margin-bottom: 6vw;
-}
-
-.redes i {
-  color: #f4f4ed;
-  margin-right: 6.7vw;
-}
-
-.redes i:hover {
-  color: #1c1a31;
-  transition: color 0.3s ease;
-}
-
-.footer-section h5:hover {
-  color: #1c1a31;
-  transition: color 0.3s ease;
-}
-
-.footer-section p:hover {
-  color: #1c1a31;
-  transition: color 0.3s ease;
-}
-
-.footer-section h5,
-p {
-  color: #f4f4ed;
-}
-
-.footer-section h5 {
-  font-size: 1.2vw;
-}
-
-.fa-solid {
-  font-size: 5vw;
-}
-
-.newsletter h1 {
-  margin-bottom: 0.6em;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.infofooter {
-  display: flex;
-  flex-direction: row;
-}
-
-.footer-section {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-right: 3vw;
-}
-.infofooter p {
-  margin-bottom: 0.4em;
-  font-size: 1vw;
-}
 
 /* media queries tablet*/
 
@@ -569,14 +540,44 @@ p {
     color: #f4f4ed;
   }
 
+  .reviews h2 {
+    font-size: 2.7vw;
+    margin-bottom: 0.6em;
+  }
+
   .footer {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .reviews h2 {
-    font-size: 3.5vw;
-    margin-bottom: 0.6em;
+  .redesaboutus {
+    width: 100%;
+    padding: 0em;
+    margin-bottom: 4em;
+  }
+
+  .redes {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .redes i {
+    margin: 6vw;
+    width: 5vw;
+    font-size: 6vw;
+  }
+
+  .footer-section {
+    margin: 6vw;
+  }
+
+  .footer-section h5 {
+    font-size: 1.7vw;
+  }
+
+  .infofooter p {
+    font-size: 1.5vw;
+    line-height: 2.9vw;
   }
 
   .newsletter_wrapper {
@@ -601,35 +602,6 @@ p {
     font-size: 2vw;
     line-height: 2.7vw;
   }
-
-  .footer-section {
-    margin: 5vw;
-  }
-
-  .infofooter p {
-    font-size: 1.7vw;
-    line-height: 2.9vw;
-  }
-
-  .footer-section h5 {
-    font-size: 1.7vw;
-  }
-
-  .redes i {
-    margin: 6vw;
-    width: 5vw;
-    font-size: 6vw;
-  }
-
-  .redes {
-    width: 100%;
-    margin-bottom: 0;
-  }
-  .redesaboutus {
-    width: 100%;
-    padding: 0em;
-    margin-bottom: 4em;
-  }
 }
 
 /* media queries movil */
@@ -641,12 +613,18 @@ p {
 
   .sectionaboutus {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
+
+  .infoaboutus {
+    width: 100%;
+  } 
+
   .churrourban {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 2em;
   }
 
   .imagen_fondo {
@@ -661,7 +639,6 @@ p {
     margin: 1em;
     font-size: 5.5vw;
   }
-
   .fa-solid,
   .fas {
     width: 80%;
@@ -701,6 +678,17 @@ p {
     transform: scale(1);
   }
 
+  .videoaboutus {
+    height: 150px; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+}
+
+.churrourbanVideo {
+    width: 50%;
+    height: 100%; /* Ajusta la altura al 100% para que el video ocupe toda la altura del contenedor */
+    object-fit: cover;
+}
+
   .botonparallax button {
     width: 80%;
     border-radius: 2em;
@@ -739,6 +727,7 @@ p {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-top: 8vw;
   }
 
   .input-field {
@@ -757,7 +746,7 @@ p {
   }
 
   .input-field input {
-    font-size: 4vw;
+    font-size: 3.6vw;
   }
 
   .newsletter_wrapper {
@@ -767,7 +756,8 @@ p {
   }
 
   .enviar button {
-    height: 2.6em;
+    height: 3em;
+    width: 7.5em;
   }
 
   .infofooter p {
@@ -808,7 +798,7 @@ p {
   }
 
   .footer-section p {
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin-bottom: 1.1em;
   }
 
