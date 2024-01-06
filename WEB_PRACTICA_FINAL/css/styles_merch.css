@@ -252,7 +252,7 @@ nav {
 }
 .star-2:hover{
   filter: drop-shadow(  0 0 0.6rem var(--color-morado-boton));
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .stars-1 {
   height: 30vw;
@@ -455,11 +455,21 @@ h3 {
 .container {
   display: flex;
   flex-direction: column;
-  margin-left: 6vw;
   align-items: center;
 }
 .row-2 {
   margin-top: 8em;
+}
+.row {
+  --bs-gutter-x: 5vw;
+  --bs-gutter-y: 0;
+  row-gap: 10vw;
+}
+
+.articulos{
+  display: flex;
+  flex-direction: column;
+  padding-left: 2vw;
 }
 
 /* IMAGENES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -468,17 +478,19 @@ h3 {
 }
 #img-parent {
   position: relative;
+  display: flex;
 }
 .img1 {
   position: relative;
   z-index: 2;
+  padding-left: 2vw;
 }
 .img2 {
   position: absolute;
   z-index: 1;
-  left: -2em;
+  left: -2vw;
   height: 26vw;
-  bottom: 18px;
+  bottom: 1vw;
 }
 .img-modal-producto {
   height: 40em;
@@ -488,10 +500,15 @@ h3 {
   height: 40em;
   bottom: 7em;
 }
-
+.galeria{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
 /* ventana modal >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .modal {
+  background-color: var(--color-rosa-hover);
   width: 100%;
   --bs-modal-width: 90%;
   --bs-modal-border-radius: 30px;
@@ -534,10 +551,10 @@ h3 {
 
 /* BOTONES COLOR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .btn-color {
-  height: 30px;
-  width: 30px;
+  height: 3vw;
+  width: 3vw;
   border: none;
-  border-radius: 30px;
+  border-radius: 3vw;
 }
 .btn-color-1 {
   background-color: var(--color-rosa-hover);
@@ -550,7 +567,7 @@ h3 {
 }
 .btn-color-4 {
   background-color: var(--color-blanco-fondo);
-  border: var(--color-rosa-hover) solid 2px;
+  border: var(--color-rosa-hover) solid 0.3vw;
 }
 .btn-color-5 {
   background-color: var(--color-negro-texto);
@@ -558,7 +575,7 @@ h3 {
 .lista-btn {
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 1.2vw;
 }
 
 /* BOTONES TALLA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -619,6 +636,21 @@ h3 {
 .card-body {
   display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* seccion footer>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -695,6 +727,8 @@ h3 {
 .footer-section a {
   text-decoration: none;
   font-size: 1em;
+  color: var(--color-blanco-fondo);
+
 }
 
 .footer-section a:hover {
