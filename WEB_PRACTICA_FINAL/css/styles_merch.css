@@ -442,11 +442,11 @@ h3 {
   border-radius: 20px;
 }
 .album {
-  padding-top: 4em;
+  padding-top: 10vw;
   display: flex;
-  padding-top: 4em;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 .col {
   display: flex;
@@ -463,15 +463,17 @@ h3 {
 .row {
   --bs-gutter-x: 5vw;
   --bs-gutter-y: 0;
-  row-gap: 10vw;
+  row-gap: 5vw;
 }
-
 .articulos{
   display: flex;
   flex-direction: column;
   padding-left: 2vw;
 }
 
+.col-12{
+  padding-bottom: 6VW;
+}
 /* IMAGENES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .img-general {
   height: 20vw;
@@ -493,18 +495,53 @@ h3 {
   bottom: 1vw;
 }
 .img-modal-producto {
-  height: 40em;
-  top: 2em;
+  height: 53vw;
+  top: 3vw;
 }
 .img-modal-estrella {
-  height: 40em;
-  bottom: 7em;
+  height: 55vw;
+  bottom: 8vw;
+  left: 2vw;
 }
 .galeria{
   display:flex;
   align-items: center;
   flex-direction: column;
 }
+
+
+
+
+/* MEDIA QUERIES GALERIA  */
+@media (max-width: 2000px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 96vw;
+      margin-left: 0;
+  }
+}
+
+@media (max-width: 576px){
+  .articulos{
+    align-items: center;
+  }
+  .articulos > p{
+    text-align: center;
+  }
+  .img2 {
+    bottom: 20vw;
+  }
+  .img-general {
+    height: 70vw;
+}
+}
+
+
+
+
+
+
+
+
 /* ventana modal >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .modal {
@@ -527,7 +564,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 11em;
+  gap: 18vw;
 }
 .texto-modal {
   display: flex;
@@ -536,13 +573,14 @@ h3 {
 .seleccion {
   display: flex;
   flex-direction: column;
-  padding: 1em 0em;
+  padding: 1vw 0em;
 }
 .h1-seleccion {
   font-weight: 800;
+  font-size: 3.7vw
 }
 .h2-seleccion {
-  font-size: 1.2em;
+  font-size: 2vw;
 }
 
 .modal-1 {
@@ -576,8 +614,11 @@ h3 {
   display: flex;
   flex-direction: row;
   gap: 1.2vw;
+  align-items: center;
 }
-
+.lista-btn > p{
+  margin-bottom: 0;
+}
 /* BOTONES TALLA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .btn-talla {
   border: var(--color-rosa-hover) solid 2px;
@@ -590,6 +631,10 @@ h3 {
   font-size: 0.7em;
 }
 .btn-talla:hover {
+  color: var(--color-rosa-hover);
+  box-shadow:
+  0 0 9px var(--color-blanco-fondo),
+  0 0 10px var(--color-rosa-hover);
   background-color: var(--color-rosa-hover);
   color: var(--color-blanco-fondo);
 }
@@ -637,7 +682,27 @@ h3 {
   display: none;
 }
 
-
+@media only screen and (max-width: 750px) {
+  .modal-content{
+    width: 90%;
+  }
+  .modal-dialog{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 0;
+    margin-top: 5vw;
+    max-width: none;
+  }
+  .modal-body{
+    flex-direction: column;
+    align-items: center;
+  }
+  #img-parent{
+    position: relative;
+    left: -7vw;
+  }
+}
 
 
 
