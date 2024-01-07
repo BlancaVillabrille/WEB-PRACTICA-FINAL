@@ -464,6 +464,7 @@ h3 {
   --bs-gutter-x: 5vw;
   --bs-gutter-y: 0;
   row-gap: 5vw;
+  width: 100%;
 }
 .articulos{
   display: flex;
@@ -520,7 +521,7 @@ h3 {
   }
 }
 
-@media (max-width: 576px){
+@media (max-width: 575px){
   .articulos{
     align-items: center;
   }
@@ -532,7 +533,13 @@ h3 {
   }
   .img-general {
     height: 70vw;
-}
+  }
+  .col-12 {
+    padding-bottom: 20VW;
+  }
+  .sec-merch > div:first-child {
+    margin-bottom: 8vw;
+  }
 }
 
 
@@ -698,7 +705,7 @@ h3 {
     flex-direction: column;
     align-items: center;
   }
-  #img-parent{
+  .modal-body > #img-parent{
     position: relative;
     left: -7vw;
   }

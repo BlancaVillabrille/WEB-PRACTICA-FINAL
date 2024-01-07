@@ -1,22 +1,3 @@
-// $('#staticBackdrop').on('show.bs.modal', function (event) {
-//     var id = $('#apartado-1')
-//     var img = $('.imgppal').src
-//     Button that triggered the modal
-//     var recipient = button.data('whatever') // Extract info from data-* attributes
-//     // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-//     // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-//     var modal = $(this)
-//     modal.find('.modal-title').text('New message to ' + recipient)
-//     modal.find('.modal-body input').val(recipient)
-//     if img== {
-
-//     }
-//   })
-
-
-
-
-
 $(document).ready(function(){
     // MENU
     $(".hamburger").click(
@@ -72,7 +53,55 @@ $(document).ready(function(){
 
 
     // VENTANA MODAL
+    
     // TITULO VENTANA
+    const exampleModal = document.getElementsByClassName('modal-prueba')
+    // if (exampleModal) {
+        // exampleModal.addEventListener('show.bs.modal', event => 
+        $(".img-parent").click(function(){
+            // Button that triggered the modal
+            const button = $(".galeria > button") ;
+            // Extract info from data-bs-* attributes
+            const recipient = button.getAttribute("data-bs-whatever");
+            // If necessary, you could initiate an Ajax request here
+            // and then do the updating in a callback.
+
+            // Update the modal's content.
+            const modalTitle = exampleModal.querySelector('.modal-title');
+            const modalBodyInput = exampleModal.querySelector('.modal-body input');
+            // if (recipient.textContent = "Shorts"){
+            //     modalTitle.textContent = "Shorts"
+            // }
+            modalTitle.textContent = `New message to ${recipient}`
+            modalBodyInput.value = recipient
+        })
+    // }
+
+
+
+    // const exampleModal = document.getElementById('exampleModal')
+    // if (exampleModal) {
+    //   exampleModal.addEventListener('show.bs.modal', event => {
+    //     // Button that triggered the modal
+    //     const button = event.relatedTarget
+    //     // Extract info from data-bs-* attributes
+    //     const recipient = button.getAttribute('data-bs-whatever')
+    //     // If necessary, you could initiate an Ajax request here
+    //     // and then do the updating in a callback.
+    
+    //     // Update the modal's content.
+    //     const modalTitle = exampleModal.querySelector('.modal-title')
+    //     const modalBodyInput = exampleModal.querySelector('.modal-body input')
+    
+    //     modalTitle.textContent = `New message to ${recipient}`
+    //     modalBodyInput.value = recipient
+    //   })
+    // }
+
+
+
+
+    
     // BOTONES IMAGENES
     // BOTONES TALLA
     $(".btn-talla-xs").click(function(){
@@ -106,15 +135,3 @@ $(document).ready(function(){
 
 });
 
-
-// var modal2 = document.getElementsByClassName('modal-2');
-
-// // Get the button that opens the modal
-// var btn2 = document.getElementsByClassName("btn-2");
-// var modal1 = document.getElementsByClassName("modal-1")
-// // When the user clicks the button, open the modal
-// btn2.onclick = function() {
-//     modal1.display = "none";
-//     modal2.style.display = "block";
-
-// }
