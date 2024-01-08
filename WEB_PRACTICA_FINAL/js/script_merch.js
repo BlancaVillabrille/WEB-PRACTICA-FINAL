@@ -35,6 +35,8 @@ $(document).ready(function(){
     // PANTALON
     $(".rosa-pantalon").click(function(){
         $('.pantalon').attr('src','media/img/MERCH/Pantalon 2.png');
+        console.log("Hello");
+
     });
     $(".morado-pantalon").click(function(){
         $('.pantalon').attr('src','media/img/MERCH/Pantalon 1.png');
@@ -55,48 +57,54 @@ $(document).ready(function(){
     // VENTANA MODAL
     
     // TITULO VENTANA
-    const exampleModal = document.getElementsByClassName('modal-prueba')
+    var exampleModal = document.getElementsByClassName('modal-prueba')
     // if (exampleModal) {
-        // exampleModal.addEventListener('show.bs.modal', event => 
-        $(".img-parent").click(function(){
+        var shorts = document.getElementById("modal-title").textContent;
+        shorts = "Shorts";
+        exampleModal.addEventListener('show.bs.modal', shorts)
+        $(".galeria > .btn ").click(function(){
             // Button that triggered the modal
-            const button = $(".galeria > button") ;
+            // var button = $(".trigger") ;
             // Extract info from data-bs-* attributes
-            const recipient = button.getAttribute("data-bs-whatever");
+            // var recipient = $(".trigger").val($(".trigger").attr("name"));
             // If necessary, you could initiate an Ajax request here
             // and then do the updating in a callback.
 
             // Update the modal's content.
-            const modalTitle = exampleModal.querySelector('.modal-title');
-            const modalBodyInput = exampleModal.querySelector('.modal-body input');
-            // if (recipient.textContent = "Shorts"){
-            //     modalTitle.textContent = "Shorts"
-            // }
-            modalTitle.textContent = `New message to ${recipient}`
-            modalBodyInput.value = recipient
-        })
+            // var modalTitle =  $(".modal-title");
+            // var modalBodyInput = exampleModal.querySelector('.modal-body input');
+                // if (recipient.textContent = "Shorts"){
+                //     modalTitle.textContent = "Shorts"
+                // }
+            
+            document.getElementById("modal-title").textContent = "Shorts";
+            // modalTitle.textContent = `New message to ${recipient}`;
+            // modalBodyInput.value = recipient
+            console.log("Hello");
+        
+        // })
     // }
 
 
 
-    // const exampleModal = document.getElementById('exampleModal')
-    // if (exampleModal) {
-    //   exampleModal.addEventListener('show.bs.modal', event => {
-    //     // Button that triggered the modal
-    //     const button = event.relatedTarget
-    //     // Extract info from data-bs-* attributes
-    //     const recipient = button.getAttribute('data-bs-whatever')
-    //     // If necessary, you could initiate an Ajax request here
-    //     // and then do the updating in a callback.
+    const exampleModal = document.getElementById('exampleModal')
+    if (exampleModal) {
+      exampleModal.addEventListener('show.bs.modal', event => {
+        // Button that triggered the modal
+        const button = event.relatedTarget
+        // Extract info from data-bs-* attributes
+        const recipient = button.getAttribute('data-bs-whatever')
+        // If necessary, you could initiate an Ajax request here
+        // and then do the updating in a callback.
     
-    //     // Update the modal's content.
-    //     const modalTitle = exampleModal.querySelector('.modal-title')
-    //     const modalBodyInput = exampleModal.querySelector('.modal-body input')
+        // Update the modal's content.
+        const modalTitle = exampleModal.querySelector('.modal-title')
+        const modalBodyInput = exampleModal.querySelector('.modal-body input')
     
-    //     modalTitle.textContent = `New message to ${recipient}`
-    //     modalBodyInput.value = recipient
-    //   })
-    // }
+        modalTitle.textContent = `New message to ${recipient}`
+        modalBodyInput.value = recipient
+      })
+    }
 
 
 
