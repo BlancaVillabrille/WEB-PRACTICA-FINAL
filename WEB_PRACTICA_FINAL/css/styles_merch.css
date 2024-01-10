@@ -551,23 +551,25 @@ h3 {
 
 /* ventana modal >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-.modal {
+.ventana1 {
+  display: flex;
+  visibility: visible;
+  position: absolute;
+  z-index: 1000;
   background-color: var(--color-rosa-hover);
   width: 100%;
-  --bs-modal-width: 90%;
-  --bs-modal-border-radius: 30px;
-  --bs-modal-header-padding: 2em 2rem;
+  border-radius: 10vw;
 }
-.modal-header {
+.ventana-header {
   border-bottom: none;
 }
-.modal-dialog {
+.ventana-dialog {
   width: 100%;
 }
-.modal-content {
+.ventana-content {
   background-color: var(--color-blanco-fondo);
 }
-.modal-body {
+.ventana-body {
   display: flex;
   flex-direction: row;
   justify-content: center;
