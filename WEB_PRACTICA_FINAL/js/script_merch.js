@@ -54,36 +54,36 @@ $(document).ready(function(){
 
 
 
-    // VENTANA MODAL
+    // // VENTANA MODAL
     
-    // TITULO VENTANA
-    var exampleModal = document.getElementsByClassName('modal-prueba')
-    // if (exampleModal) {
-        var shorts = document.getElementById("modal-title").textContent;
-        shorts = "Shorts";
-        exampleModal.addEventListener('show.bs.modal', shorts)
-        $(".galeria > .btn ").click(function(){
-            // Button that triggered the modal
-            // var button = $(".trigger") ;
-            // Extract info from data-bs-* attributes
-            // var recipient = $(".trigger").val($(".trigger").attr("name"));
-            // If necessary, you could initiate an Ajax request here
-            // and then do the updating in a callback.
+    // // TITULO VENTANA
+    // var exampleModal = document.getElementsByClassName('modal-prueba')
+    // // if (exampleModal) {
+    //     var shorts = document.getElementById("modal-title").textContent;
+    //     shorts = "Shorts";
+    //     exampleModal.addEventListener('show.bs.modal', shorts)
+    //     $(".galeria > .btn ").click(function(){
+    //         // Button that triggered the modal
+    //         // var button = $(".trigger") ;
+    //         // Extract info from data-bs-* attributes
+    //         // var recipient = $(".trigger").val($(".trigger").attr("name"));
+    //         // If necessary, you could initiate an Ajax request here
+    //         // and then do the updating in a callback.
 
-            // Update the modal's content.
-            // var modalTitle =  $(".modal-title");
-            // var modalBodyInput = exampleModal.querySelector('.modal-body input');
-                // if (recipient.textContent = "Shorts"){
-                //     modalTitle.textContent = "Shorts"
-                // }
+    //         // Update the modal's content.
+    //         // var modalTitle =  $(".modal-title");
+    //         // var modalBodyInput = exampleModal.querySelector('.modal-body input');
+    //             // if (recipient.textContent = "Shorts"){
+    //             //     modalTitle.textContent = "Shorts"
+    //             // }
             
-            document.getElementById("modal-title").textContent = "Shorts";
-            // modalTitle.textContent = `New message to ${recipient}`;
-            // modalBodyInput.value = recipient
-            console.log("Hello");
+    //         document.getElementById("modal-title").textContent = "Shorts";
+    //         // modalTitle.textContent = `New message to ${recipient}`;
+    //         // modalBodyInput.value = recipient
+    //         console.log("Hello");
         
-        // })
-    // }
+    //     // })
+    // // }
 
 
 
@@ -112,18 +112,41 @@ $(document).ready(function(){
     
     // BOTONES IMAGENES
     // BOTONES TALLA
-    $(".btn-talla-xs").click(function(){
-        $(this).css('background-color', 'var(--color-rosa-hover)');
-        $(this).css('color', 'var(--color-blanco-fondo)');
-        var bgcolorxs = $('.btn-talla-xs.css').css('background-color');
-    })
-    $(".btn-talla-s").click(function(){
-        $(this).css('background-color', 'var(--color-rosa-hover)');
-        $(this).css('color', 'var(--color-blanco-fondo)');
-        if (bgcolorxs == "var(--color-rosa-hover)") {
-            ('.btn-talla-xs ').css("background-color", "var(--color-blanco-fondo)")
-        }
-    })
+
+
+
+    var buttons = $(".btn-talla");
+
+    buttons.click(function() {
+      buttons.removeClass("pink"); // Eliminar la clase "pink" de todos los botones
+      $(this).addClass("pink"); // Agregar la clase "pink" al botón actual
+    });
+    $(".img-general").on("click", function () {
+        // Al abrir la ventana modal
+        $(".btn-talla").removeClass("pink"); // Elimina la clase pink de todos los botones
+    });
+
+
+
+
+
+
+    // var bgcolorxs = $('.btn-talla-xs').css('background-color');
+
+    // $(".btn-talla-xs").click(function(){
+    //     // bgcolorxs = "var(--color-rosa-hover)";
+    //     $(this).css('background-color', 'var(--color-rosa-hover)');
+    //     $(this).css('color', 'var(--color-blanco-fondo)');
+    // })
+    // $(".btn-talla-s").click(function(){
+
+    //     $(this).css('background-color', 'var(--color-rosa-hover)');
+    //     $(this).css('color', 'var(--color-blanco-fondo)');
+    //     if (bgcolorxs === "var(--color-rosa-hover)") {
+    //         $('.btn-talla-xs').css("background-color") = "var(--color-blanco-fondo)";
+    //         console.log("hola");
+    //     }
+    // })
     // BOTONOES CANTIDAD
     $(document).ready(function(){
         var contador = 1;
@@ -141,5 +164,17 @@ $(document).ready(function(){
         })
      })
 
+     $(".btn-comprar-1").hover(
+        function(){
+        $(".btn-comprar-1 > img").attr('src', 'media/img/flecharosa.svg');
+        },
+        function(){
+        $(".btn-comprar-1 > img").attr('src', 'media/img/flecha.svg');
+        }
+    );
+
+
 });
+
+
 
