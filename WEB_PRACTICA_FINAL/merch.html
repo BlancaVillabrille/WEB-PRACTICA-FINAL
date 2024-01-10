@@ -114,7 +114,7 @@
 
                             <!-- IMG 1 -->
                             <div class="galeria">
-                                <button type="button" class="btn btn-primary img-btn trigger1"></button>
+                                <button id="trigger1" type="button" class="btn btn-primary img-btn ">
                                     <div id="img-parent">
                                         <img class="img-general img1 pantalon" src="media/img/MERCH/Pantalon 1.png" alt="">
                                         <img class="img-general img2" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
@@ -138,11 +138,69 @@
                             </div>
                         </div>
 
+                         <!-- Modal 1-->
+                        <div id="ventana1" >
+                            <div class="ventana-dialog">
+                                <div class="ventana-content">
+                                    <div class="ventana-header">
+                                        <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1> -->
+                                        <button type="button" class="btn-close"></button>
+                                    </div>
+                                    <div class="ventana-body">
+                                        <div id="img-parent">
+                                            <img class="img-general img1 img-modal-producto" src="media/img/MERCH/Pantalon 1.png" alt="Camiseta">
+                                            <img class="img-general img2 img-modal-estrella" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
+                                        </div>
+                                        <div class="texto-modal">
+                                            <div>
+                                                <h1 id="modal-title" class="h1-seleccion">Shorts</h1>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Selecciona color:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-color btn-color-1"></button>
+                                                        <button class="btn-color btn-color-2"></button>
+                                                        <button class="btn-color btn-color-3"></button>
+                                                        <button class="btn-color btn-color-4"></button>
+                                                        <button class="btn-color btn-color-5"></button>
+                                                    </li>
+                                                </div>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Selecciona talla:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-talla btn-talla-xs">XS</button>
+                                                        <button class="btn-talla btn-talla-s">S</button>
+                                                        <button class="btn-talla btn-talla-m">M</button>
+                                                        <button class="btn-talla btn-talla-l">L</button>
+                                                        <button class="btn-talla btn-talla-xl">XL</button>
+                                                        <button class="btn-talla btn-talla-xll">XXL</button>
+                                                    </li>
+                                                </div> <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Cantidad:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-cantidad btn-cantidad-menos">-</button>
+                                                        <p min="0" class="contador">1</p>
+                                                        <button class="btn-cantidad btn-cantidad-mas">+</button>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                            <div class="btn-comprar">
+                                                <button type="button" class="btn btn-secondary btn-comprar-1" data-bs-dismiss="modal">
+                                                    COMPRAR
+                                                    <img class="flecha-merch-btn" src="media/img/flecha.svg" alt="flecha">
+                                                </button>
+                                                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="col-12 col-sm-6  col-lg-4">
                             <!-- IMG 2 -->
                             <div class="galeria">
-                                <button type="button" class="btn btn-2 btn-primary img-btn"  >
+                                <button id="trigger2" type="button" class="btn btn-2 btn-primary img-btn"  >
                                     <div id="img-parent">
                                         <img class="img-general img1" src="media/img/MERCH/camiseta 10.png" alt="">
                                         <img class="img-general img2" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
@@ -165,11 +223,71 @@
                                 </div>   
                             </div>
                         </div>
-                            
+
+                        <!-- MODAL 2 -->
+                        <div id="ventana2" >
+                            <div class="ventana-dialog">
+                                <div class="ventana-content">
+                                    <div class="ventana-header">
+                                        <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1> -->
+                                        <button type="button" class="btn-close"></button>
+                                    </div>
+                                    <div class="ventana-body">
+                                        <div id="img-parent">
+                                            <img class="img-general img1 img-modal-producto" src="media/img/MERCH/camiseta 9.png" alt="Camiseta">
+                                            <img class="img-general img2 img-modal-estrella" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
+                                        </div>
+                                        <div class="texto-modal">
+                                            <div>
+                                                <h1 id="modal-title" class="h1-seleccion">Camiseta</h1>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Selecciona color:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-color btn-color-1"></button>
+                                                        <button class="btn-color btn-color-2"></button>
+                                                        <button class="btn-color btn-color-3"></button>
+                                                        <button class="btn-color btn-color-4"></button>
+                                                        <button class="btn-color btn-color-5"></button>
+                                                    </li>
+                                                </div>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Selecciona talla:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-talla btn-talla-xs">XS</button>
+                                                        <button class="btn-talla btn-talla-s">S</button>
+                                                        <button class="btn-talla btn-talla-m">M</button>
+                                                        <button class="btn-talla btn-talla-l">L</button>
+                                                        <button class="btn-talla btn-talla-xl">XL</button>
+                                                        <button class="btn-talla btn-talla-xll">XXL</button>
+                                                    </li>
+                                                </div> <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Cantidad:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-cantidad btn-cantidad-menos">-</button>
+                                                        <p min="0" class="contador">1</p>
+                                                        <button class="btn-cantidad btn-cantidad-mas">+</button>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                            <div class="btn-comprar">
+                                                <button type="button" class="btn btn-secondary btn-comprar-1" data-bs-dismiss="modal">
+                                                    COMPRAR
+                                                    <img class="flecha-merch-btn" src="media/img/flecha.svg" alt="flecha">
+                                                </button>
+                                                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
                         <div class="col-12 col-sm-6 col-lg-4">
                             <!-- IMG 3 -->
                             <div class="galeria">
-                                <button type="button" class="btn btn-2 btn-primary img-btn" >
+                                <button id="trigger3" type="button" class="btn btn-2 btn-primary img-btn" >
                                     <div id="img-parent">
                                         <img class="img-general img1" src="media/img/MERCH/camisetas 4.png" alt="">
                                         <img class="img-general img2" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
@@ -192,11 +310,128 @@
                                 </div>   
                             </div>
                         </div>
+<!-- MODAL 2 -->
+                        <div id="ventana2" >
+                            <div class="ventana-dialog">
+                                <div class="ventana-content">
+                                    <div class="ventana-header">
+                                        <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1> -->
+                                        <button type="button" class="btn-close"></button>
+                                    </div>
+                                    <div class="ventana-body">
+                                        <div id="img-parent">
+                                            <img class="img-general img1 img-modal-producto" src="media/img/MERCH/camiseta 9.png" alt="Camiseta">
+                                            <img class="img-general img2 img-modal-estrella" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
+                                        </div>
+                                        <div class="texto-modal">
+                                            <div>
+                                                <h1 id="modal-title" class="h1-seleccion">Camiseta</h1>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Selecciona color:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-color btn-color-1"></button>
+                                                        <button class="btn-color btn-color-2"></button>
+                                                        <button class="btn-color btn-color-3"></button>
+                                                        <button class="btn-color btn-color-4"></button>
+                                                        <button class="btn-color btn-color-5"></button>
+                                                    </li>
+                                                </div>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Selecciona talla:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-talla btn-talla-xs">XS</button>
+                                                        <button class="btn-talla btn-talla-s">S</button>
+                                                        <button class="btn-talla btn-talla-m">M</button>
+                                                        <button class="btn-talla btn-talla-l">L</button>
+                                                        <button class="btn-talla btn-talla-xl">XL</button>
+                                                        <button class="btn-talla btn-talla-xll">XXL</button>
+                                                    </li>
+                                                </div> <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Cantidad:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-cantidad btn-cantidad-menos">-</button>
+                                                        <p min="0" class="contador">1</p>
+                                                        <button class="btn-cantidad btn-cantidad-mas">+</button>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                            <div class="btn-comprar">
+                                                <button type="button" class="btn btn-secondary btn-comprar-1" data-bs-dismiss="modal">
+                                                    COMPRAR
+                                                    <img class="flecha-merch-btn" src="media/img/flecha.svg" alt="flecha">
+                                                </button>
+                                                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MODAL 3 -->
+                        <div id="ventana3" >
+                            <div class="ventana-dialog">
+                                <div class="ventana-content">
+                                    <div class="ventana-header">
+                                        <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1> -->
+                                        <button type="button" class="btn-close"></button>
+                                    </div>
+                                    <div class="ventana-body">
+                                        <div id="img-parent">
+                                            <img class="img-general img1 img-modal-producto" src="media/img/MERCH/camiseta 9.png" alt="Camiseta">
+                                            <img class="img-general img2 img-modal-estrella" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
+                                        </div>
+                                        <div class="texto-modal">
+                                            <div>
+                                                <h1 id="modal-title" class="h1-seleccion">Camiseta</h1>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Selecciona color:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-color btn-color-1"></button>
+                                                        <button class="btn-color btn-color-2"></button>
+                                                        <button class="btn-color btn-color-3"></button>
+                                                        <button class="btn-color btn-color-4"></button>
+                                                        <button class="btn-color btn-color-5"></button>
+                                                    </li>
+                                                </div>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Selecciona talla:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-talla btn-talla-xs">XS</button>
+                                                        <button class="btn-talla btn-talla-s">S</button>
+                                                        <button class="btn-talla btn-talla-m">M</button>
+                                                        <button class="btn-talla btn-talla-l">L</button>
+                                                        <button class="btn-talla btn-talla-xl">XL</button>
+                                                        <button class="btn-talla btn-talla-xll">XXL</button>
+                                                    </li>
+                                                </div> <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Cantidad:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-cantidad btn-cantidad-menos">-</button>
+                                                        <p min="0" class="contador">1</p>
+                                                        <button class="btn-cantidad btn-cantidad-mas">+</button>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                            <div class="btn-comprar">
+                                                <button type="button" class="btn btn-secondary btn-comprar-1" data-bs-dismiss="modal">
+                                                    COMPRAR
+                                                    <img class="flecha-merch-btn" src="media/img/flecha.svg" alt="flecha">
+                                                </button>
+                                                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="col-12 col-sm-6 col-lg-4">
                             <!-- IMG 4 -->
                             <div class="galeria">
-                                <button type="button" class="btn btn-2 btn-primary img-btn">
+                                <button id="trigger4" type="button" class="btn btn-2 btn-primary img-btn">
                                     <div id="img-parent">
                                         <img class="img-general img1 img-sudadera" src="media/img/MERCH/sudadera 1 delantera.png" alt="">
                                         <img class="img-general img2" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
@@ -220,10 +455,69 @@
                             </div>
                         </div>
 
+                        <!-- MODAL 4 -->
+                        <div id="ventana4" >
+                            <div class="ventana-dialog">
+                                <div class="ventana-content">
+                                    <div class="ventana-header">
+                                        <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1> -->
+                                        <button type="button" class="btn-close"></button>
+                                    </div>
+                                    <div class="ventana-body">
+                                        <div id="img-parent">
+                                            <img class="img-general img1 img-modal-producto" src="media/img/MERCH/camiseta 9.png" alt="Camiseta">
+                                            <img class="img-general img2 img-modal-estrella" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
+                                        </div>
+                                        <div class="texto-modal">
+                                            <div>
+                                                <h1 id="modal-title" class="h1-seleccion">Sudadera</h1>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Selecciona color:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-color btn-color-1"></button>
+                                                        <button class="btn-color btn-color-2"></button>
+                                                        <button class="btn-color btn-color-3"></button>
+                                                        <button class="btn-color btn-color-4"></button>
+                                                        <button class="btn-color btn-color-5"></button>
+                                                    </li>
+                                                </div>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Selecciona talla:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-talla btn-talla-xs">XS</button>
+                                                        <button class="btn-talla btn-talla-s">S</button>
+                                                        <button class="btn-talla btn-talla-m">M</button>
+                                                        <button class="btn-talla btn-talla-l">L</button>
+                                                        <button class="btn-talla btn-talla-xl">XL</button>
+                                                        <button class="btn-talla btn-talla-xll">XXL</button>
+                                                    </li>
+                                                </div> <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Cantidad:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-cantidad btn-cantidad-menos">-</button>
+                                                        <p min="0" class="contador">1</p>
+                                                        <button class="btn-cantidad btn-cantidad-mas">+</button>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                            <div class="btn-comprar">
+                                                <button type="button" class="btn btn-secondary btn-comprar-1" data-bs-dismiss="modal">
+                                                    COMPRAR
+                                                    <img class="flecha-merch-btn" src="media/img/flecha.svg" alt="flecha">
+                                                </button>
+                                                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="col-12 col-sm-6 col-lg-4">
                             <!-- IMG 5 -->
                             <div class="galeria">
-                                <button type="button" class="btn btn-2 btn-primary img-btn">
+                                <button id="trigger5"type="button" class="btn btn-2 btn-primary img-btn">
                                     <div id="img-parent">
                                         <img class="img-general img1" src="media/img/MERCH/sudadera 2.png" alt="">
                                         <img class="img-general img2" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
@@ -247,10 +541,69 @@
                             </div>
                         </div>
 
+                        <!-- MODAL 5 -->
+                        <div id="ventana5" >
+                            <div class="ventana-dialog">
+                                <div class="ventana-content">
+                                    <div class="ventana-header">
+                                        <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1> -->
+                                        <button type="button" class="btn-close"></button>
+                                    </div>
+                                    <div class="ventana-body">
+                                        <div id="img-parent">
+                                            <img class="img-general img1 img-modal-producto" src="media/img/MERCH/camiseta 9.png" alt="Camiseta">
+                                            <img class="img-general img2 img-modal-estrella" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
+                                        </div>
+                                        <div class="texto-modal">
+                                            <div>
+                                                <h1 id="modal-title" class="h1-seleccion">Sudadera</h1>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Selecciona color:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-color btn-color-1"></button>
+                                                        <button class="btn-color btn-color-2"></button>
+                                                        <button class="btn-color btn-color-3"></button>
+                                                        <button class="btn-color btn-color-4"></button>
+                                                        <button class="btn-color btn-color-5"></button>
+                                                    </li>
+                                                </div>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Selecciona talla:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-talla btn-talla-xs">XS</button>
+                                                        <button class="btn-talla btn-talla-s">S</button>
+                                                        <button class="btn-talla btn-talla-m">M</button>
+                                                        <button class="btn-talla btn-talla-l">L</button>
+                                                        <button class="btn-talla btn-talla-xl">XL</button>
+                                                        <button class="btn-talla btn-talla-xll">XXL</button>
+                                                    </li>
+                                                </div> <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Cantidad:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-cantidad btn-cantidad-menos">-</button>
+                                                        <p min="0" class="contador">1</p>
+                                                        <button class="btn-cantidad btn-cantidad-mas">+</button>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                            <div class="btn-comprar">
+                                                <button type="button" class="btn btn-secondary btn-comprar-1" data-bs-dismiss="modal">
+                                                    COMPRAR
+                                                    <img class="flecha-merch-btn" src="media/img/flecha.svg" alt="flecha">
+                                                </button>
+                                                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="col-12 col-sm-6 col-lg-4">
                             <!-- IMG 6 -->
                             <div class="galeria">
-                                <button type="button" class="btn btn-2 btn-primary img-btn">
+                                <button id="trigger6" type="button" class="btn btn-2 btn-primary img-btn">
                                     <div id="img-parent">
                                         <img class="img-general img1" src="media/img/MERCH/zapatillas.png" alt="">
                                         <img class="img-general img2" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
@@ -273,10 +626,71 @@
                                 </div>   
                             </div>
                         </div>
+
+                        <!-- MODAL 6 -->
+                        <div id="ventana6" >
+                            <div class="ventana-dialog">
+                                <div class="ventana-content">
+                                    <div class="ventana-header">
+                                        <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1> -->
+                                        <button type="button" class="btn-close"></button>
+                                    </div>
+                                    <div class="ventana-body">
+                                        <div id="img-parent">
+                                            <img class="img-general img1 img-modal-producto" src="media/img/MERCH/camiseta 9.png" alt="Camiseta">
+                                            <img class="img-general img2 img-modal-estrella" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
+                                        </div>
+                                        <div class="texto-modal">
+                                            <div>
+                                                <h1 id="modal-title" class="h1-seleccion">Zapatillas</h1>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Selecciona color:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-color btn-color-1"></button>
+                                                        <button class="btn-color btn-color-2"></button>
+                                                        <button class="btn-color btn-color-3"></button>
+                                                        <button class="btn-color btn-color-4"></button>
+                                                        <button class="btn-color btn-color-5"></button>
+                                                    </li>
+                                                </div>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Selecciona talla:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-talla btn-talla-xs">XS</button>
+                                                        <button class="btn-talla btn-talla-s">S</button>
+                                                        <button class="btn-talla btn-talla-m">M</button>
+                                                        <button class="btn-talla btn-talla-l">L</button>
+                                                        <button class="btn-talla btn-talla-xl">XL</button>
+                                                        <button class="btn-talla btn-talla-xll">XXL</button>
+                                                    </li>
+                                                </div> <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Cantidad:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-cantidad btn-cantidad-menos">-</button>
+                                                        <p min="0" class="contador">1</p>
+                                                        <button class="btn-cantidad btn-cantidad-mas">+</button>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                            <div class="btn-comprar">
+                                                <button type="button" class="btn btn-secondary btn-comprar-1" data-bs-dismiss="modal">
+                                                    COMPRAR
+                                                    <img class="flecha-merch-btn" src="media/img/flecha.svg" alt="flecha">
+                                                </button>
+                                                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                         <div class="col-12 col-sm-6 col-lg-6">
                             <!-- IMG 7 -->
                             <div class="galeria">
-                                <button type="button" class="btn btn-2 btn-primary img-btn">
+                                <button id="trigger7" type="button" class="btn btn-2 btn-primary img-btn">
                                     <div id="img-parent">
                                         <img class="img-general img1" src="media/img/MERCH/Llavero gato.png" alt="">
                                         <img class="img-general img2" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
@@ -290,10 +704,50 @@
                                 </div>   
                             </div>
                         </div>
+
+                        <!-- MODAL 7 -->
+                        <div id="ventana7" >
+                            <div class="ventana-dialog">
+                                <div class="ventana-content">
+                                    <div class="ventana-header">
+                                        <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1> -->
+                                        <button type="button" class="btn-close"></button>
+                                    </div>
+                                    <div class="ventana-body">
+                                        <div id="img-parent">
+                                            <img class="img-general img1 img-modal-producto" src="media/img/MERCH/camiseta 9.png" alt="Camiseta">
+                                            <img class="img-general img2 img-modal-estrella" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
+                                        </div>
+                                        <div class="texto-modal">
+                                            <div>
+                                                <h1 id="modal-title" class="h1-seleccion">Llavero</h1>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Cantidad:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-cantidad btn-cantidad-menos">-</button>
+                                                        <p min="0" class="contador">1</p>
+                                                        <button class="btn-cantidad btn-cantidad-mas">+</button>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                            <div class="btn-comprar">
+                                                <button type="button" class="btn btn-secondary btn-comprar-1" data-bs-dismiss="modal">
+                                                    COMPRAR
+                                                    <img class="flecha-merch-btn" src="media/img/flecha.svg" alt="flecha">
+                                                </button>
+                                                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="col-12 col-sm-6 col-lg-6">
                             <!-- IMG 8 -->
                             <div class="galeria">
-                                <button type="button" class="btn btn-2 btn-primary img-btn">
+                                <button id="trigger8" type="button" class="btn btn-2 btn-primary img-btn">
                                     <div id="img-parent">
                                         <img class="img-general img1" src="media/img/MERCH/llavero.png" alt="">
                                         <img class="img-general img2" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
@@ -307,119 +761,52 @@
                                 </div>   
                             </div>
                         </div>
+
+                        <!-- MODAL 8 -->
+                        <div id="ventana" >
+                            <div class="ventana-dialog">
+                                <div class="ventana-content">
+                                    <div class="ventana-header">
+                                        <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1> -->
+                                        <button type="button" class="btn-close"></button>
+                                    </div>
+                                    <div class="ventana-body">
+                                        <div id="img-parent">
+                                            <img class="img-general img1 img-modal-producto" src="media/img/MERCH/camiseta 9.png" alt="Camiseta">
+                                            <img class="img-general img2 img-modal-estrella" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
+                                        </div>
+                                        <div class="texto-modal">
+                                            <div>
+                                                <h1 id="modal-title" class="h1-seleccion">Llavero</h1>
+                                                <div class="seleccion">
+                                                    <h2 class="h2-seleccion">Cantidad:</h2>
+                                                    <li class="lista-btn">
+                                                        <button class="btn-cantidad btn-cantidad-menos">-</button>
+                                                        <p min="0" class="contador">1</p>
+                                                        <button class="btn-cantidad btn-cantidad-mas">+</button>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                            <div class="btn-comprar">
+                                                <button type="button" class="btn btn-secondary btn-comprar-1" data-bs-dismiss="modal">
+                                                    COMPRAR
+                                                    <img class="flecha-merch-btn" src="media/img/flecha.svg" alt="flecha">
+                                                </button>
+                                                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Modal 1-->
-        <div class="ventana1" >
-            <div class="ventana-dialog">
-                <div class="venana-content">
-                    <div class="ventana-header">
-                        <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1> -->
-                        <button type="button" class="btn-close"></button>
-                    </div>
-                    <div class="ventana-body">
-                        <div id="img-parent">
-                            <img class="img-general img1 img-modal-producto" src="media/img/MERCH/camiseta 9.png" alt="Camiseta">
-                            <img class="img-general img2 img-modal-estrella" src="media/img/estrellas_rosa.png" alt="Estrella rosa">
-                        </div>
-                        <div class="texto-modal">
-                            <div>
-                                <h1 id="modal-title" class="h1-seleccion">Camiseta</h1>
-                                <div class="seleccion">
-                                    <h2 class="h2-seleccion">Selecciona color:</h2>
-                                    <li class="lista-btn">
-                                        <button class="btn-color btn-color-1"></button>
-                                        <button class="btn-color btn-color-2"></button>
-                                        <button class="btn-color btn-color-3"></button>
-                                        <button class="btn-color btn-color-4"></button>
-                                        <button class="btn-color btn-color-5"></button>
-                                    </li>
-                                </div>
-                                <div class="seleccion">
-                                    <h2 class="h2-seleccion">Selecciona talla:</h2>
-                                    <li class="lista-btn">
-                                        <button class="btn-talla btn-talla-xs">XS</button>
-                                        <button class="btn-talla btn-talla-s">S</button>
-                                        <button class="btn-talla btn-talla-m">M</button>
-                                        <button class="btn-talla btn-talla-l">L</button>
-                                        <button class="btn-talla btn-talla-xl">XL</button>
-                                        <button class="btn-talla btn-talla-xll">XXL</button>
-                                    </li>
-                                </div> <div class="seleccion">
-                                    <h2 class="h2-seleccion">Cantidad:</h2>
-                                    <li class="lista-btn">
-                                        <button class="btn-cantidad btn-cantidad-menos">-</button>
-                                        <p min="0" class="contador">1</p>
-                                        <button class="btn-cantidad btn-cantidad-mas">+</button>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="btn-comprar">
-                                <button type="button" class="btn btn-secondary btn-comprar-1" data-bs-dismiss="modal">
-                                    COMPRAR
-                                    <img class="flecha-merch-btn" src="media/img/flecha.svg" alt="flecha">
-                                </button>
-                                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
     </main>
-    <footer>
-
-
-
-
-
-
-
-
-
-
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-        
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="mb-3">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
-                  </div>
-                  <div class="mb-3">
-                    <label for="message-text" class="col-form-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Send message</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
 
 
 <!-- Contenido del footer -->

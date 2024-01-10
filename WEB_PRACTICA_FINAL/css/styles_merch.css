@@ -550,24 +550,48 @@ h3 {
 
 
 /* ventana modal >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.cierre{
+  overflow: auto;
+}
 
-.ventana1 {
-  display: flex;
-  visibility: visible;
-  position: absolute;
+#ventana1, #ventana2, #ventana3, #ventana4, #ventana5, #ventana6, #ventana7, #ventana8{
+  display: none;
+  visibility: hidden;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
   z-index: 1000;
   background-color: var(--color-rosa-hover);
   width: 100%;
-  border-radius: 10vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
 }
+
 .ventana-header {
   border-bottom: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 3vw;
+  padding-right: 2vw;
+}
+.ventana-header > button{
+  padding-right: 6vw;
 }
 .ventana-dialog {
-  width: 100%;
+  width: 90%;
+  padding: 5vw 0vw;
+  margin: 2vw 0vw;
 }
 .ventana-content {
   background-color: var(--color-blanco-fondo);
+  display: flex;
+  flex-direction: column;
+  border-radius: 3vw;
+  gap: 5vw;
 }
 .ventana-body {
   display: flex;
@@ -592,9 +616,6 @@ h3 {
   font-size: 2vw;
 }
 
-.modal-1 {
-  display: none;
-}
 
 /* BOTONES COLOR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .btn-color {
@@ -725,23 +746,30 @@ h3 {
   );
 }
 @media only screen and (max-width: 750px) {
-  .modal-content{
+  #ventana1{
+    justify-content: flex-start;
+  }
+  .ventana-content{
     width: 90%;
   }
-  .modal-dialog{
+  .ventana-dialog{
     display: flex;
+    height: auto;
     flex-direction: column;
     align-items:center;
     margin: 0;
     margin-top: 5vw;
     max-width: none;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 3vw 0vw;
   }
-  .modal-body{
+  .ventana-body{
     flex-direction: column;
     align-items: center;
     gap: 7vw;
   }
-  .modal-body > #img-parent{
+  .ventana-body > #img-parent{
     position: relative;
     left: -7vw;
   }
@@ -777,6 +805,9 @@ h3 {
 
 
 @media only screen and (max-width: 575px) {
+  .ventana-body{
+    padding-top: 10vw;
+  }
   .lista-btn {
     gap: 6vw;
   }
