@@ -55,7 +55,7 @@ $(document).ready(function(){
 
 
     // // VENTANA MODAL
-    $("#trigger1, #trigger2").click(function() {
+    $("#trigger1").click(function() {
         $("#ventana1").css("visibility","visible");
         $("#ventana1").css("display","flex");
     });

@@ -550,10 +550,13 @@ h3 {
 
 
 /* ventana modal >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-.cierre{
-  overflow: auto;
+.row>* {
+  padding-right: 0;
+  padding-left: 0;
 }
-
+.btn-close{
+  z-index: 1005;
+}
 #ventana1, #ventana2, #ventana3, #ventana4, #ventana5, #ventana6, #ventana7, #ventana8{
   display: none;
   visibility: hidden;
@@ -566,8 +569,8 @@ h3 {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   overflow: auto;
+  justify-content: flex-start;
 }
 
 .ventana-header {
@@ -582,7 +585,7 @@ h3 {
   padding-right: 6vw;
 }
 .ventana-dialog {
-  width: 90%;
+  width: 94%;
   padding: 5vw 0vw;
   margin: 2vw 0vw;
 }
@@ -649,18 +652,20 @@ h3 {
 .lista-btn > p{
   margin-bottom: 0;
 }
+
 /* BOTONES TALLA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-.btn-talla {
+
+.seleccion > .lista-btn > div > .btn-talla {
   border: var(--color-rosa-hover) solid 2px;
-  border-radius: 30px;
-  height: 30px;
-  width: 30px;
+  border-radius: 3vw;
+  height: 3vw;
+  width: 3vw;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 0.7em;
 }
-.btn-talla:hover {
+.seleccion > .lista-btn > div > .btn-talla:hover {
   color: var(--color-rosa-hover);
   box-shadow:
   0 0 9px var(--color-blanco-fondo),
@@ -673,12 +678,13 @@ h3 {
   background-color: var(--color-rosa-hover);
   color: var(--color-blanco-fondo);
 }
-/* .btn-talla-xs{
-  background-color: var(--color-blanco-fondo);
+.lista-talla > div{
+  display: flex;
+  flex-direction: row;
+  gap: 1.2vw;  
 }
-.btn-talla-xs:hover{
-  background-color: var(--color-rosa-hover);
-} */
+
+
 /* BOTONES CANTIDAD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .btn-cantidad {
   border: var(--color-rosa-hover) solid 2px;
@@ -698,7 +704,7 @@ h3 {
   color: var(--color-blanco-fondo);
 }
 
-/* BOTONES CANTIDAD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* BOTONES COMPRAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .btn-comprar {
   display: flex;
   padding: 2em 0em;
@@ -748,24 +754,31 @@ h3 {
 
 
 @media only screen and (min-width: 1400px) {
-  .btn-color {
+  .btn-color, .seleccion > .lista-btn > div > .btn-talla  {
     height: 2vw;
     width: 2vw;
     border-radius: 2vw;
   }
+
   .btn-color-4 {
     border: var(--color-rosa-hover) solid 0.2em;
   }
 }
-
-
+@media only screen and (min-width: 750px) {
+  #ventana7 > .ventana-dialog > .ventana-content > .ventana-body{
+    padding-bottom: 3vw;
+  }
+  #ventana8 > .ventana-dialog > .ventana-content > .ventana-body{
+    padding-bottom: 6vw;
+  }
+}
 
 @media only screen and (max-width: 750px) {
   #ventana1{
     justify-content: flex-start;
   }
   .ventana-content{
-    width: 90%;
+    width: 100%;
   }
   .ventana-dialog{
     display: flex;
@@ -806,7 +819,7 @@ h3 {
   .seleccion > .lista-btn {
     gap: 3vw;
   }
-  .seleccion > .lista-btn > .btn-color {
+  .seleccion > .lista-btn > .btn-color, .seleccion > .lista-btn > div > .btn-talla  {
     height: 5.5vw;
     width: 5.5vw;
     border-radius: 5.5vw;
@@ -818,6 +831,23 @@ h3 {
   }
   .btn-color-4 {
     border: var(--color-rosa-hover) solid 0.5vw;
+  }
+  .lista-talla > div {
+    gap: 5vw;
+  }
+  .seleccion > .lista-talla{
+    gap: 4vw;
+  }
+  .texto-modal{
+    padding-bottom: 10vw;
+  }
+  .btn-comprar-1 {
+    width: 31vw;
+    height: 17vw;
+    font-size: 3vw;
+  }
+  .flecha-merch-btn {
+    width: 2.5vw;
   }
 }
 
@@ -834,16 +864,32 @@ h3 {
     width: 7vw;
     border-radius: 7vw;
   }
-  .seleccion > .lista-btn > .btn-color {
-    height: 8vw;
-    width: 8vw;
+  .seleccion > .lista-btn > .btn-color, .seleccion > .lista-btn > div> .btn-talla  {
+    height: 7vw;
+    width: 7vw;
     border-radius: 5.5vw;
+    font-size: 2.3vw;
+  }
+  .seleccion > .lista-talla {
+    flex-direction: column;
+  }
+  .btn-comprar-1 {
+    width: 44vw;
+    font-size: 5vw;
+  }
+  .flecha-merch-btn {
+    width: 4.5vw;
   }
 }
 
-
-
-
+@media only screen and (max-width: 450px){
+  .seleccion > .lista-btn > .btn-color, .seleccion > .lista-btn > div> .btn-talla  {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 10vw;
+    font-size: 3.4vw;
+  }
+}
 
 
 
