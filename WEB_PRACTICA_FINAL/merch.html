@@ -819,5 +819,26 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>    
     <script src="js/script_merch.js"></script>
+    <script>
+        function validarCorreo() {
+            var emailInput = document.getElementById('emailInput');
+            if (emailInput.checkValidity()) {
+                alert('¡Gracias por suscribirte!');
+            } else {
+                if (emailInput.validity.typeMismatch) {
+                    emailInput.setCustomValidity('Por favor, ingresa una dirección de correo electrónico válida.');
+                } else {
+                    if (emailInput.validity.typeMismatch) {
+                        emailInput.setCustomValidity('Por favor, ingresa una dirección de correo electrónico válida.');
+                    } else {
+                        emailInput.setCustomValidity('Este campo es obligatorio.');
+                    }
+                    emailInput.reportValidity();
+                    emailInput.setCustomValidity('Este campo es obligatorio.');
+                }
+                emailInput.reportValidity();
+            }
+        }
+        </script>
 </body>
 </html>

@@ -325,5 +325,26 @@
     <script src="js/jquery-horizontal-scroll.min.js"></script> 
     <script src="js/jquery.mousewheel.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        function validarCorreo() {
+            var emailInput = document.getElementById('emailInput');
+            if (emailInput.checkValidity()) {
+                alert('¡Gracias por suscribirte!');
+            } else {
+                if (emailInput.validity.typeMismatch) {
+                    emailInput.setCustomValidity('Por favor, ingresa una dirección de correo electrónico válida.');
+                } else {
+                    if (emailInput.validity.typeMismatch) {
+                        emailInput.setCustomValidity('Por favor, ingresa una dirección de correo electrónico válida.');
+                    } else {
+                        emailInput.setCustomValidity('Este campo es obligatorio.');
+                    }
+                    emailInput.reportValidity();
+                    emailInput.setCustomValidity('Este campo es obligatorio.');
+                }
+                emailInput.reportValidity();
+            }
+        }
+        </script>
 </body>
 </html>
