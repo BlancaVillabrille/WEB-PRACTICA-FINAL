@@ -233,27 +233,12 @@ nav {
   border-radius: 4vw;
 }
 .star-1 {
-  height: 22vw;
-  top: 16vw;
+  height: 100%;
+  top: 0;
   left: -2vw;
   z-index: 3;
 }
-.star-1:hover{
-  filter: drop-shadow(  0 0 0.3rem var(--color-verde-links));
-  transition: 0.3s;
 
-}
-.star-2 {
-  height: 37vw;
-  top: -28vw;
-  left: -6vw;
-  filter: drop-shadow(  0 0 0 none);
-
-}
-.star-2:hover{
-  filter: drop-shadow(  0 0 0.6rem var(--color-morado-boton));
-  transition: 0.3s ease-in-out;
-}
 .stars-1 {
   height: 30vw;
   top: -7vw;
@@ -355,10 +340,6 @@ nav {
   .square-stars {
     width: 46vw;
     height: 68vw;
-  }
-  .star-1 {
-    height: 35vw;
-    top: 24vw;
   }
   .star-2 {
     height: 59vw;
