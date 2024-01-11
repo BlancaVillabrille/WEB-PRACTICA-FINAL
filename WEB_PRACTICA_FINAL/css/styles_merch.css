@@ -568,7 +568,7 @@ h3 {
 .ventana-dialog {
   width: 94%;
   padding: 5vw 0vw;
-  margin: 2vw 0vw;
+  margin: 0vw;
 }
 .ventana-content {
   background-color: var(--color-blanco-fondo);
@@ -740,9 +740,16 @@ h3 {
     width: 2vw;
     border-radius: 2vw;
   }
-
   .btn-color-4 {
     border: var(--color-rosa-hover) solid 0.2em;
+  }
+  .btn-comprar-1 {
+    width: 14vw;
+    height: 4vw;
+    font-size: 1.2vw;
+  }
+  .flecha-merch-btn {
+    width: 1.2vw;
   }
 }
 @media only screen and (min-width: 750px) {
