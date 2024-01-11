@@ -1273,6 +1273,10 @@ div.card-img > img {
         height: 3em;
         width: 7.5em;
     }
+
+    .toggle_menu > ul {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -1427,6 +1431,10 @@ div.card-img > img {
     .row>* {
         width: 70%;
     }
+
+    .toggle_menu > ul {
+        width: 70%;
+    }
     
 }
 
@@ -1499,6 +1507,10 @@ div.card-img > img {
     div.column img.starM.pink {
         bottom: -187%;
         right: 8%;
+    }
+
+    .toggle_menu > ul {
+        width: 100%;
     }
     
 }

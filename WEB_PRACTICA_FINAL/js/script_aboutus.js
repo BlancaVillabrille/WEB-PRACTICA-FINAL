@@ -4,21 +4,21 @@ $(document).ready(function(){
   });
 
   $("#logo").hover(
-    function(){
-      $("#logo > img").attr('src', 'media/img/logo horizontal-LED.png');
-    },
-    function(){
-      $("#logo > img").attr('src', 'media/img/Logo Horizontal.png');
-    }
+      function(){
+          $("#logo > a > img").attr('src', 'media/img/logo horizontal-LED.png');
+      },
+      function(){
+          $("#logo > a > img").attr('src', 'media/img/Logo Horizontal.png');
+      }
   );
 
   $(".section_title").hover(
-    function(){
-      $(".section_title > img.LED_flecha").attr('src', 'media/img/flecha_LED.png');
-    },
-    function(){
-      $(".section_title > img.LED_flecha").attr('src', 'media/img/flecha.png');
-    }
+      function(){
+          $(".section_title > img.LED_flecha").attr('src', 'media/img/flecha_LED.png');
+      },
+      function(){
+          $(".section_title > img.LED_flecha").attr('src', 'media/img/flecha.png');
+      }
   );
 
   $(".owl-carousel").owlCarousel({
