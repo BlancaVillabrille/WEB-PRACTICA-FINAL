@@ -211,7 +211,7 @@ nav {
   display: flex;
   flex-direction: row;
   object-fit: contain;
-  width: 90vw;
+  width: 28vw;
 }
 .square-stars {
   width: 30vw;
@@ -336,6 +336,7 @@ nav {
     padding-left: 1.2vw;
     right: 2vw;
     justify-content: flex-start;
+    width: 49vw;
   } 
   .square-stars {
     width: 46vw;
