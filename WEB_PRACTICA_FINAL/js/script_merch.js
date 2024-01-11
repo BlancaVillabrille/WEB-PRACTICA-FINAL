@@ -79,7 +79,7 @@ $(document).ready(function(){
         $("#ventana6").css("visibility","visible");
         $("#ventana6").css("display","flex");
     });
-    $("#trigge7").click(function() {
+    $("#trigger7").click(function() {
         $("#ventana7").css("visibility","visible");
         $("#ventana7").css("display","flex");
     });

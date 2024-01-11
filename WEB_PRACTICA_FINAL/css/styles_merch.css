@@ -745,6 +745,21 @@ h3 {
       /* Trazado difuminado blanco más pronunciado */
   );
 }
+
+
+@media only screen and (min-width: 1400px) {
+  .btn-color {
+    height: 2vw;
+    width: 2vw;
+    border-radius: 2vw;
+  }
+  .btn-color-4 {
+    border: var(--color-rosa-hover) solid 0.2em;
+  }
+}
+
+
+
 @media only screen and (max-width: 750px) {
   #ventana1{
     justify-content: flex-start;
@@ -800,6 +815,9 @@ h3 {
     height: 5vw;
     width: 5vw;
     border-radius: 5vw;
+  }
+  .btn-color-4 {
+    border: var(--color-rosa-hover) solid 0.5vw;
   }
 }
 
